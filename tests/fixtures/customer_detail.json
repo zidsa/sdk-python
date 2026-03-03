@@ -1,0 +1,639 @@
+{
+  "status": "object",
+  "customer": {
+    "id": 218,
+    "name": "Test User 1",
+    "email": "testuser1@example.com",
+    "mobile": "966500000006",
+    "gender": "male",
+    "birth_date": "1999-05-05",
+    "verified": true,
+    "is_active": true,
+    "is_cod_enabled": true,
+    "type": "business",
+    "business_name": "Test Business 1",
+    "tax_number": null,
+    "commercial_registration": "111111",
+    "source": null,
+    "points": {
+      "id": "23b3d445-e6c8-4d3f-aee8-957ebde2517d",
+      "external_id": "9727666",
+      "store_id": "2261600a-4d09-4f6f-ae3a-0a0f5431f733",
+      "customer_id": 218,
+      "loyalty_provider": "gameball",
+      "points": 32600,
+      "pending_points": 32600,
+      "pending_negative_points": 0,
+      "total_positive_points": 32600,
+      "total_negative_points": 0,
+      "created_at": "2024-09-02T13:22:43.000000Z",
+      "updated_at": "2024-09-05T11:04:55.000000Z",
+      "deleted_at": null,
+      "status": 5
+    },
+    "order_total_payments": "17326.58",
+    "last_order_date": null,
+    "created_at": "2021-01-19T12:24:26.000000Z",
+    "updated_at": "2026-01-14T16:10:20.000000Z",
+    "city": {
+      "id": 1,
+      "national_id": 3,
+      "name": "Riyadh",
+      "priority": 10,
+      "country_id": 184,
+      "country_name": "Saudi Arabia",
+      "country_code": "SA",
+      "ar_name": "الرياض",
+      "en_name": "Riyadh"
+    },
+    "nickname": "Test User 1",
+    "pivotEmail": "testuser1@example.com",
+    "pivotMobile": "966500000006",
+    "order_counts": 21,
+    "total_payments": 17326.577946570764,
+    "orders_cost_average": 825.0751403128935,
+    "orders": [
+      {
+        "id": 39018142,
+        "invoice_number": 39018142,
+        "code": "SkX3AeLKAi",
+        "store_id": 1,
+        "order_url": "https://teststore.zidtest.com/o/SkX3AeLKAi/inv",
+        "store_name": "Test Store",
+        "shipping_method_code": null,
+        "store_url": "https://teststore.zidtest.com/",
+        "order_status": {
+          "name": "New",
+          "code": "new"
+        },
+        "display_status": {
+          "id": 1044,
+          "code": "test",
+          "color": "#000000",
+          "name": "test"
+        },
+        "currency_code": "SAR",
+        "customer": {
+          "id": 218,
+          "name": "Test User 1",
+          "email": "testuser1@example.com",
+          "mobile": "966500000006",
+          "note": "",
+          "verified": 1,
+          "type": "business",
+          "business_name": "Test Business 1",
+          "tax_number": "",
+          "commercial_registration": "111111"
+        },
+        "has_different_consignee": 0,
+        "is_guest_customer": 0,
+        "is_gift_order": 0,
+        "gift_card_details": null,
+        "is_quick_checkout_order": false,
+        "order_total": "1211.99999371820000",
+        "order_total_string": "1,212.00 SAR",
+        "has_different_transaction_currency": false,
+        "transaction_reference": null,
+        "transaction_amount": 1211.9999937182,
+        "transaction_amount_string": "1,212.00 SAR",
+        "issue_date": "15-01-2026 | 03:35 ص",
+        "payment_status": "pending",
+        "is_potential_fraud": false,
+        "source": "Merchant Admin",
+        "source_code": "md",
+        "is_reseller_transaction": false,
+        "created_at": "2026-01-14 15:35:44",
+        "updated_at": "2026-01-16 08:23:51",
+        "is_on_demand": false,
+        "import_id": null,
+        "tags": [],
+        "requires_shipping": false,
+        "should_merchant_set_shipping_method": false,
+        "shipping": {
+          "method": {
+            "id": null,
+            "name": "Doesn't Require Shipping",
+            "code": null,
+            "estimated_delivery_time": null,
+            "icon": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/delivery.png",
+            "is_system_option": false,
+            "waybill": null,
+            "had_errors_while_fetching_waybill": false,
+            "waybill_tracking_id": null,
+            "has_waybill_and_packing_list": false,
+            "tracking": {
+              "number": null,
+              "status": null,
+              "url": null
+            },
+            "courier": null,
+            "return_shipment": null,
+            "packages_count": null
+          },
+          "address": {
+            "formatted_address": "N/A",
+            "street": "Prince Abdulaziz Ibn Mussaed Ibn Jalawi",
+            "district": "Al Murabba Dist.",
+            "lat": null,
+            "lng": null,
+            "short_address": "RCRA8734",
+            "meta": {
+              "building_number": null,
+              "postcode": null
+            },
+            "city": {
+              "id": 1,
+              "name": "Riyadh"
+            },
+            "country": {
+              "id": 184,
+              "name": "Saudi Arabia",
+              "code": "SA"
+            }
+          }
+        },
+        "payment": {
+          "method": {
+            "name": "Bank Transfer",
+            "code": "zid_bank_transfer",
+            "type": "zid_bank_transfer",
+            "transaction_status": "new",
+            "transaction_status_name": "New"
+          }
+        },
+        "cod_confirmed": false,
+        "reverse_order_label_request": null,
+        "reverse_order_label_requests": []
+      },
+      {
+        "id": 39018135,
+        "invoice_number": 39018135,
+        "code": "JxjOMcgIdr",
+        "store_id": 1,
+        "order_url": "https://teststore.zidtest.com/o/JxjOMcgIdr/inv",
+        "store_name": "Test Store",
+        "shipping_method_code": "zid_zidship.level_2",
+        "store_url": "https://teststore.zidtest.com/",
+        "order_status": {
+          "name": "New",
+          "code": "new"
+        },
+        "display_status": {
+          "id": 1,
+          "code": "new",
+          "color": "#3498db",
+          "name": "New"
+        },
+        "currency_code": "SAR",
+        "customer": {
+          "id": 218,
+          "name": "Test User 1",
+          "email": "testuser1@example.com",
+          "mobile": "966500000006",
+          "note": "Asda",
+          "verified": 1,
+          "type": "business",
+          "business_name": "Test Business 1",
+          "tax_number": "",
+          "commercial_registration": "111111"
+        },
+        "has_different_consignee": 0,
+        "is_guest_customer": 0,
+        "is_gift_order": 0,
+        "gift_card_details": null,
+        "is_quick_checkout_order": false,
+        "order_total": "424.14999792679000",
+        "order_total_string": "424.15 SAR",
+        "has_different_transaction_currency": false,
+        "transaction_reference": null,
+        "transaction_amount": 424.14999792679,
+        "transaction_amount_string": "424.15 SAR",
+        "issue_date": "15-01-2026 | 01:45 ص",
+        "payment_status": "pending",
+        "is_potential_fraud": false,
+        "source": "Merchant Admin",
+        "source_code": "md",
+        "is_reseller_transaction": false,
+        "created_at": "2026-01-14 13:45:12",
+        "updated_at": "2026-01-14 15:17:37",
+        "is_on_demand": false,
+        "import_id": null,
+        "tags": [],
+        "requires_shipping": true,
+        "should_merchant_set_shipping_method": false,
+        "shipping": {
+          "method": {
+            "id": 877,
+            "name": "Fast",
+            "code": "zid_zidship",
+            "estimated_delivery_time": "Estimated time to delivery Test\r\nTest",
+            "icon": "https://testing-media-907587157081.zidship.com/thumbs/servicelevel/f3d16017-bd4f-4074-a99c-256ea92db7be-thumbnail-370x370.png",
+            "is_system_option": true,
+            "waybill": null,
+            "had_errors_while_fetching_waybill": false,
+            "waybill_tracking_id": null,
+            "has_waybill_and_packing_list": false,
+            "tracking": {
+              "number": null,
+              "status": null,
+              "url": null
+            },
+            "order_shipping_status": null,
+            "inventory_address": [],
+            "courier": null,
+            "return_shipment": null,
+            "packages_count": null
+          },
+          "address": {
+            "formatted_address": "N/A",
+            "street": "Bir Sufyan",
+            "district": "Al Murabba Dist.",
+            "lat": null,
+            "lng": null,
+            "short_address": "RCRA8745",
+            "meta": {
+              "building_number": "",
+              "postcode": "",
+              "additional_number": "",
+              "city_name": ""
+            },
+            "city": {
+              "id": 1,
+              "name": "Riyadh"
+            },
+            "country": {
+              "id": 184,
+              "name": "Saudi Arabia",
+              "code": "SA"
+            }
+          }
+        },
+        "payment": {
+          "method": {
+            "name": "Bank Transfer",
+            "code": "zid_bank_transfer",
+            "type": "zid_bank_transfer",
+            "transaction_status": "new",
+            "transaction_status_name": "New"
+          }
+        },
+        "cod_confirmed": false,
+        "reverse_order_label_request": null,
+        "reverse_order_label_requests": []
+      },
+      {
+        "id": 39017998,
+        "invoice_number": 39017998,
+        "code": "kLn9ZrrqFe",
+        "store_id": 1,
+        "order_url": "https://teststore.zidtest.com/o/kLn9ZrrqFe/inv",
+        "store_name": "Test Store",
+        "shipping_method_code": "zid_zidship.aramex_drop_off",
+        "store_url": "https://teststore.zidtest.com/",
+        "order_status": {
+          "name": "Ready",
+          "code": "ready"
+        },
+        "display_status": {
+          "id": 17,
+          "code": "ready",
+          "color": "#2ecc71",
+          "name": "Ready"
+        },
+        "currency_code": "SAR",
+        "customer": {
+          "id": 218,
+          "name": "Test User 1",
+          "email": "testuser1@example.com",
+          "mobile": "966500000006",
+          "note": "",
+          "verified": 1,
+          "type": "business",
+          "business_name": "Test Business 1",
+          "tax_number": "",
+          "commercial_registration": "111111"
+        },
+        "has_different_consignee": 0,
+        "is_guest_customer": 0,
+        "is_gift_order": 0,
+        "gift_card_details": null,
+        "is_quick_checkout_order": false,
+        "order_total": "11326.59994143700000",
+        "order_total_string": "11,326.60 SAR",
+        "has_different_transaction_currency": false,
+        "transaction_reference": null,
+        "transaction_amount": 11326.599941437,
+        "transaction_amount_string": "11,326.60 SAR",
+        "issue_date": "06-01-2026 | 02:59 ص",
+        "payment_status": "pending",
+        "is_potential_fraud": false,
+        "source": "Merchant Admin",
+        "source_code": "md",
+        "is_reseller_transaction": false,
+        "created_at": "2026-01-05 14:59:21",
+        "updated_at": "2026-01-20 12:00:09",
+        "is_on_demand": false,
+        "import_id": null,
+        "tags": [],
+        "requires_shipping": true,
+        "should_merchant_set_shipping_method": false,
+        "shipping": {
+          "method": {
+            "id": 895,
+            "name": "Aramex Drop-off",
+            "code": "zid_zidship",
+            "estimated_delivery_time": "",
+            "icon": "https://testing-media-907587157081.zidship.com/thumbs/servicelevel/64bd4309-0e87-4edc-b31f-dcf822763a06-thumbnail-370x370.png",
+            "is_system_option": true,
+            "waybill": null,
+            "had_errors_while_fetching_waybill": false,
+            "waybill_tracking_id": null,
+            "has_waybill_and_packing_list": false,
+            "tracking": {
+              "number": null,
+              "status": null,
+              "url": null
+            },
+            "order_shipping_status": "Canceled",
+            "inventory_address": [],
+            "courier": {
+              "name": {
+                "ar": "سمسا",
+                "en": "SMSA"
+              },
+              "code": "smsa",
+              "logo": "https://testing-media-907587157081.zidship.com/courier/c3cf8e50-7886-446b-baa8-cd061cfc30f6.png",
+              "identifier": "SMSA"
+            },
+            "return_shipment": null,
+            "packages_count": 1
+          },
+          "address": {
+            "formatted_address": "N/A",
+            "street": "",
+            "district": "cktest-distrct-1744656252611",
+            "lat": null,
+            "lng": null,
+            "short_address": null,
+            "meta": {
+              "building_number": null,
+              "postcode": null
+            },
+            "city": {
+              "id": 1,
+              "name": "Riyadh"
+            },
+            "country": {
+              "id": 184,
+              "name": "Saudi Arabia",
+              "code": "SA"
+            }
+          }
+        },
+        "payment": {
+          "method": {
+            "name": "Cash on Delivery",
+            "code": "zid_cod",
+            "type": "zid_cod"
+          }
+        },
+        "cod_confirmed": false,
+        "reverse_order_label_request": null,
+        "reverse_order_label_requests": []
+      },
+      {
+        "id": 39017175,
+        "invoice_number": 39017175,
+        "code": "pQ4C3Kmr7Q",
+        "store_id": 1,
+        "order_url": "https://teststore.zidtest.com/o/pQ4C3Kmr7Q/inv",
+        "store_name": "Test Store",
+        "shipping_method_code": null,
+        "store_url": "https://teststore.zidtest.com/",
+        "order_status": {
+          "name": "Delivered",
+          "code": "delivered"
+        },
+        "display_status": {
+          "id": 5,
+          "code": "delivered",
+          "color": "#27ae60",
+          "name": "Delivered"
+        },
+        "currency_code": "SAR",
+        "customer": {
+          "id": 218,
+          "name": "Test auy32",
+          "email": "testuser1@example.com",
+          "mobile": "966500000006",
+          "note": "",
+          "verified": 1,
+          "type": "individual"
+        },
+        "has_different_consignee": 0,
+        "is_guest_customer": 0,
+        "is_gift_order": 0,
+        "gift_card_details": null,
+        "is_quick_checkout_order": false,
+        "order_total": "1211.99999371820000",
+        "order_total_string": "1,212.00 SAR",
+        "has_different_transaction_currency": false,
+        "transaction_reference": null,
+        "transaction_amount": 1211.9999937182,
+        "transaction_amount_string": "1,212.00 SAR",
+        "issue_date": "22-11-2025 | 09:04 ص",
+        "payment_status": "pending",
+        "is_potential_fraud": false,
+        "source": "Merchant Admin",
+        "source_code": "md",
+        "is_reseller_transaction": false,
+        "created_at": "2025-11-21 21:04:14",
+        "updated_at": "2025-12-16 08:30:25",
+        "is_on_demand": false,
+        "import_id": null,
+        "tags": [
+          {
+            "id": "278d5e21-af91-4d7c-a77a-11b554029516",
+            "name": "Posted to zatca",
+            "store_id": "3dfc16e6-ad19-4126-9c2a-5e4a7fb73051",
+            "user_id": "ZidEInvoicing",
+            "orders": []
+          }
+        ],
+        "requires_shipping": false,
+        "should_merchant_set_shipping_method": false,
+        "shipping": {
+          "method": {
+            "id": null,
+            "name": "Doesn't Require Shipping",
+            "code": null,
+            "estimated_delivery_time": null,
+            "icon": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/delivery.png",
+            "is_system_option": false,
+            "waybill": null,
+            "had_errors_while_fetching_waybill": false,
+            "waybill_tracking_id": null,
+            "has_waybill_and_packing_list": false,
+            "tracking": {
+              "number": null,
+              "status": null,
+              "url": null
+            },
+            "courier": null,
+            "return_shipment": null,
+            "packages_count": 1
+          },
+          "address": {
+            "formatted_address": "N/A",
+            "street": "",
+            "district": "cktest-distrct-1744656252611",
+            "lat": null,
+            "lng": null,
+            "short_address": null,
+            "meta": {
+              "building_number": null,
+              "postcode": null
+            },
+            "city": {
+              "id": 1,
+              "name": "Riyadh"
+            },
+            "country": {
+              "id": 184,
+              "name": "Saudi Arabia",
+              "code": "SA"
+            }
+          }
+        },
+        "payment": {
+          "method": {
+            "name": "Bank Transfer",
+            "code": "zid_bank_transfer",
+            "type": "zid_bank_transfer",
+            "transaction_status": "transfered",
+            "transaction_status_name": "Confirmed"
+          }
+        },
+        "cod_confirmed": false,
+        "reverse_order_label_request": null,
+        "reverse_order_label_requests": []
+      },
+      {
+        "id": 39016276,
+        "invoice_number": 39016276,
+        "code": "XDYoVytTzA",
+        "store_id": 1,
+        "order_url": "https://teststore.zidtest.com/o/XDYoVytTzA/inv",
+        "store_name": "Test Store",
+        "shipping_method_code": null,
+        "store_url": "https://teststore.zidtest.com/",
+        "order_status": {
+          "name": "New",
+          "code": "new"
+        },
+        "display_status": {
+          "id": 1,
+          "code": "new",
+          "color": "#3498db",
+          "name": "New"
+        },
+        "currency_code": "SAR",
+        "customer": {
+          "id": 218,
+          "name": "Test auy32",
+          "email": "testuser1@example.com",
+          "mobile": "966500000006",
+          "note": "",
+          "verified": 1,
+          "type": "individual"
+        },
+        "has_different_consignee": 0,
+        "is_guest_customer": 0,
+        "is_gift_order": 0,
+        "gift_card_details": null,
+        "is_quick_checkout_order": false,
+        "order_total": "1211.99999371820000",
+        "order_total_string": "1,212.00 SAR",
+        "has_different_transaction_currency": false,
+        "transaction_reference": null,
+        "transaction_amount": 1211.9999937182,
+        "transaction_amount_string": "1,212.00 SAR",
+        "issue_date": "14-10-2025 | 04:00 ص",
+        "payment_status": "pending",
+        "is_potential_fraud": false,
+        "source": "Merchant Admin",
+        "source_code": "md",
+        "is_reseller_transaction": false,
+        "created_at": "2025-10-13 16:00:54",
+        "updated_at": "2025-10-13 16:00:57",
+        "is_on_demand": false,
+        "import_id": null,
+        "tags": [],
+        "requires_shipping": false,
+        "should_merchant_set_shipping_method": false,
+        "shipping": {
+          "method": {
+            "id": null,
+            "name": "Doesn't Require Shipping",
+            "code": null,
+            "estimated_delivery_time": null,
+            "icon": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/delivery.png",
+            "is_system_option": false,
+            "waybill": null,
+            "had_errors_while_fetching_waybill": false,
+            "waybill_tracking_id": null,
+            "has_waybill_and_packing_list": false,
+            "tracking": {
+              "number": null,
+              "status": null,
+              "url": null
+            },
+            "courier": null,
+            "return_shipment": null,
+            "packages_count": null
+          },
+          "address": {
+            "formatted_address": "N/A",
+            "street": "",
+            "district": "cktest-distrct-1744656252611",
+            "lat": null,
+            "lng": null,
+            "short_address": null,
+            "meta": {
+              "building_number": null,
+              "postcode": null
+            },
+            "city": {
+              "id": 1,
+              "name": "Riyadh"
+            },
+            "country": {
+              "id": 184,
+              "name": "Saudi Arabia",
+              "code": "SA"
+            }
+          }
+        },
+        "payment": {
+          "method": {
+            "name": "Bank Transfer",
+            "code": "zid_bank_transfer",
+            "type": "zid_bank_transfer",
+            "transaction_status": "new",
+            "transaction_status_name": "New"
+          }
+        },
+        "cod_confirmed": false,
+        "reverse_order_label_request": null,
+        "reverse_order_label_requests": []
+      }
+    ],
+    "tags": []
+  },
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

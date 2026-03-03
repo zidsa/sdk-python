@@ -1,0 +1,8 @@
+{
+  "code": "SUCCESS_WITH_SINGLE_PAYLOAD_OBJECT",
+  "message": null,
+  "payload": {
+    "credit_notes": [],
+    "returned_items": []
+  }
+}

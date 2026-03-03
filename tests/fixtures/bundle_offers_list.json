@@ -1,0 +1,87 @@
+{
+  "status": "object",
+  "discount_rules": [
+    {
+      "id": "02ed8742-354d-4b44-8f3f-39766081c12e",
+      "name": {"en": "Buy 2 Get 1 Free", "ar": "اشتر 2 واحصل على 1 مجاناً"},
+      "description": {"en": "Summer bundle deal", "ar": "عرض صيفي"},
+      "code": "bundle_offer",
+      "conditions": [
+        {
+          "field": "products_quantity",
+          "operator": ">=",
+          "value": 2,
+          "applies_to": "product",
+          "product_ids": ["abc123"]
+        }
+      ],
+      "actions": [
+        {
+          "type": "free",
+          "field": "products",
+          "value": 100,
+          "applies_to": "product",
+          "product_ids": ["def456"],
+          "products_quantity": 1
+        }
+      ],
+      "conditions_criteria": "all",
+      "uses_total": null,
+      "uses_customer": null,
+      "enabled": true,
+      "auto_adding": true,
+      "status_code": "active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-12-31",
+      "meta": null,
+      "channel": "catalog",
+      "channel_name": {"en": "Online Store", "ar": "المتجر الإلكتروني"}
+    },
+    {
+      "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+      "name": {"en": "Combo Deal", "ar": null},
+      "description": [],
+      "code": "bundle_offer",
+      "conditions": [
+        {
+          "field": "products_quantity",
+          "operator": ">=",
+          "value": 1,
+          "applies_to": "all_products",
+          "product_ids": []
+        }
+      ],
+      "actions": [
+        {
+          "type": "percentage",
+          "field": "products",
+          "value": 50,
+          "applies_to": "all_products",
+          "product_ids": [],
+          "products_quantity": 1
+        }
+      ],
+      "conditions_criteria": "all",
+      "uses_total": 100,
+      "uses_customer": 3,
+      "enabled": false,
+      "auto_adding": false,
+      "status_code": "disabled",
+      "start_date": "2026-03-01",
+      "end_date": null,
+      "meta": {},
+      "channel": null,
+      "channel_name": null
+    }
+  ],
+  "page": 1,
+  "next_page": null,
+  "last_page": 1,
+  "total": 2,
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

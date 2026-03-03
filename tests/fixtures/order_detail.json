@@ -1,0 +1,452 @@
+{
+  "status": "object",
+  "order": {
+    "id": 39018491,
+    "invoice_number": 39018491,
+    "code": "zrDH30DWiX",
+    "store_id": 1,
+    "order_url": "https://teststore.zidtest.com/o/zrDH30DWiX/inv",
+    "store_name": "Test Store",
+    "shipping_method_code": null,
+    "store_url": "https://teststore.zidtest.com/",
+    "order_status": {
+      "name": "New",
+      "code": "new"
+    },
+    "display_status": {
+      "id": 1,
+      "code": "new",
+      "color": "#3498db",
+      "name": "New"
+    },
+    "currency_code": "SAR",
+    "customer": {
+      "id": 257,
+      "name": "Test User 5",
+      "email": "testuser5@example.com",
+      "mobile": "966500000005",
+      "note": "",
+      "type": "individual"
+    },
+    "has_different_consignee": 0,
+    "is_guest_customer": 0,
+    "is_gift_order": 0,
+    "gift_card_details": null,
+    "is_quick_checkout_order": false,
+    "order_total": "100.00000000000000",
+    "order_total_string": "100.00 SAR",
+    "has_different_transaction_currency": false,
+    "transaction_reference": null,
+    "transaction_amount": 100,
+    "transaction_amount_string": "100.00 SAR",
+    "issue_date": "31-01-2026 | 03:56 ص",
+    "payment_status": "pending",
+    "is_potential_fraud": false,
+    "source": "Merchant Admin",
+    "source_code": "md",
+    "is_reseller_transaction": false,
+    "created_at": "2026-01-30 15:56:02",
+    "updated_at": "2026-01-30 15:56:06",
+    "is_on_demand": false,
+    "import_id": null,
+    "tags": [],
+    "requires_shipping": false,
+    "should_merchant_set_shipping_method": false,
+    "shipping": {
+      "method": {
+        "id": null,
+        "name": "Doesn't Require Shipping",
+        "code": null,
+        "estimated_delivery_time": null,
+        "icon": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/delivery.png",
+        "is_system_option": false,
+        "waybill": null,
+        "had_errors_while_fetching_waybill": false,
+        "waybill_tracking_id": null,
+        "has_waybill_and_packing_list": false,
+        "tracking": {
+          "number": null,
+          "status": null,
+          "url": null
+        },
+        "courier": null,
+        "return_shipment": null,
+        "packages_count": null
+      },
+      "address": {
+        "formatted_address": "N/A",
+        "street": "street",
+        "district": "disc",
+        "lat": null,
+        "lng": null,
+        "short_address": null,
+        "meta": {
+          "postcode": "000000",
+          "building_number": "3"
+        },
+        "city": {
+          "id": 2,
+          "name": "Al Hariq"
+        },
+        "country": {
+          "id": 184,
+          "name": "Saudi Arabia",
+          "code": "SA"
+        }
+      }
+    },
+    "payment": {
+      "method": {
+        "name": "Bank Transfer",
+        "code": "zid_bank_transfer",
+        "type": "zid_bank_transfer",
+        "transaction_status": "transfered",
+        "transaction_status_name": "Confirmed",
+        "transaction_bank": "The National Commercial Bank",
+        "transaction_slip": "https://zid-testing-907587157081.s3-accelerate.amazonaws.com/public/catalog/1/bts/JL5WoYplbId6BRB3anJIMu3pukFk8rcNP2rqbmN6.png",
+        "transaction_sender_name": "",
+        "updated_at": "2026-01-30 15:56:05"
+      },
+      "invoice": [
+        {
+          "code": "sub_totals_before_vat",
+          "value": "100.00000000000000",
+          "value_string": "100.00 SAR",
+          "title": "Total without VAT"
+        },
+        {
+          "code": "taxable_amount",
+          "value": "0.00000000000000",
+          "value_string": "0.00 SAR",
+          "title": "Taxable amount"
+        },
+        {
+          "code": "vat",
+          "value": "0.00000000000000",
+          "value_string": "0.00 SAR",
+          "title": "VAT (%15)"
+        },
+        {
+          "code": "sub_totals_after_vat",
+          "value": "100.00000000000000",
+          "value_string": "100.00 SAR",
+          "title": "Total Inc. VAT"
+        },
+        {
+          "code": "total",
+          "value": "100.00000000000000",
+          "value_string": "100.00 SAR",
+          "title": "Total"
+        }
+      ]
+    },
+    "cod_confirmed": false,
+    "reverse_order_label_request": null,
+    "reverse_order_label_requests": [],
+    "customer_note": "",
+    "gift_message": null,
+    "payment_link": null,
+    "weight": 0,
+    "weight_cost_details": [],
+    "currency": {
+      "order_currency": {
+        "id": 4,
+        "code": "SAR",
+        "exchange_rate": 1
+      },
+      "order_store_currency": {
+        "id": 4,
+        "code": "SAR",
+        "exchange_rate": null
+      }
+    },
+    "coupon": null,
+    "products": [
+      {
+        "id": "23edd6a6-3533-495d-8ffc-7f9e7c8c1f6a",
+        "order_product_id": 62262,
+        "parent_id": null,
+        "parent_name": null,
+        "product_class": null,
+        "name": "نسخة من TrialProduct",
+        "short_description": null,
+        "sku": "Z.1.1723970467001006",
+        "barcode": null,
+        "custom_fields": [
+          {
+            "price_settings": {
+              "1ee4d618-42f2-4e07-a1be-7a33062ea069": "02a3a20b-acda-4b36-a311-61817dd3f7d8"
+            },
+            "group_id": "1ee4d618-42f2-4e07-a1be-7a33062ea069",
+            "group_name": "",
+            "label": "List",
+            "name": "1",
+            "value": "✔",
+            "type": "DROPDOWN",
+            "net_additions_price_string": "0.00 SAR",
+            "gross_additions_price_string": "0.00 SAR",
+            "additions_price_string": "0.00 SAR",
+            "net_additions_price": "0",
+            "gross_additions_price": "0",
+            "additions_price": "0",
+            "formatted_value": "✔"
+          }
+        ],
+        "quantity": 1,
+        "weight": null,
+        "is_taxable": false,
+        "is_discounted": false,
+        "meta": null,
+        "is_external_product": false,
+        "discounts": [],
+        "net_price_with_additions": 100,
+        "net_price_with_additions_string": "100.00 SAR",
+        "price_with_additions": 100,
+        "price_with_additions_string": "100.00 SAR",
+        "net_price": 100,
+        "net_price_string": "100.00 SAR",
+        "net_sale_price": null,
+        "net_sale_price_string": null,
+        "net_additions_price": 0,
+        "net_additions_price_string": null,
+        "gross_price": 100,
+        "gross_price_string": "100.00 SAR",
+        "gross_sale_price": null,
+        "gross_sale_price_string": null,
+        "price_before": null,
+        "price_before_string": null,
+        "total_before": null,
+        "total_before_string": null,
+        "gross_additions_price": 0,
+        "gross_additions_price_string": null,
+        "discount_percentage": 0,
+        "tax_percentage": 0,
+        "tax_amount": "0.00000000000000",
+        "tax_amount_string": "0.00 SAR",
+        "tax_amount_string_per_item": "0.00 SAR",
+        "discounted_tax_amount": 0,
+        "discounted_tax_amount_string": "0.00 SAR",
+        "discounted_tax_amount_string_per_item": "0.00 SAR",
+        "price": 100,
+        "price_string": "100.00 SAR",
+        "additions_price": 0,
+        "additions_price_string": "0.00 SAR",
+        "total": 100,
+        "total_string": "100.00 SAR",
+        "discounted_total": 100,
+        "discounted_total_string": "100.00 SAR",
+        "images": [
+          {
+            "id": "static",
+            "origin": "https://media.zid.store/static/missing_image.png",
+            "thumbs": {
+              "fullSize": "https://media.zid.store/static/missing_image.png",
+              "thumbnail": "https://media.zid.store/static/missing_image.png",
+              "small": "https://media.zid.store/static/missing_image.png",
+              "medium": "https://media.zid.store/static/missing_image.png",
+              "large": "https://media.zid.store/static/missing_image.png"
+            }
+          }
+        ],
+        "options": [],
+        "inventory_allocations": []
+      }
+    ],
+    "products_count": 1,
+    "products_sum_total_string": "100.00 SAR",
+    "language": "en",
+    "histories": [
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "تم تصدير الطلب .",
+        "created_at": "2026-02-04 12:54:50",
+        "humanized_created_at": "1 day ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-04 12:53:57",
+        "humanized_created_at": "1 day ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-03 15:48:18",
+        "humanized_created_at": "2 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-03 03:23:16",
+        "humanized_created_at": "2 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-03 02:54:40",
+        "humanized_created_at": "2 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-02 22:35:26",
+        "humanized_created_at": "3 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-02 14:22:45",
+        "humanized_created_at": "3 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-02 13:10:58",
+        "humanized_created_at": "3 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been exported.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been exported.",
+        "created_at": "2026-02-02 06:58:37",
+        "humanized_created_at": "3 days ago"
+      },
+      {
+        "order_status_id": 1,
+        "order_status_name": "New",
+        "changed_by_id": 1,
+        "changed_by_type": "Merchant",
+        "changed_by_details": {
+          "action": "Order has been created.",
+          "by": "Test Store",
+          "comment": ""
+        },
+        "comment": "Order has been created.",
+        "created_at": "2026-01-30 15:56:05",
+        "humanized_created_at": "6 days ago"
+      }
+    ],
+    "is_reactivated": false,
+    "return_policy": "cktest-exchange-returns-53242yyyy",
+    "packages_count": 1,
+    "inventory_address": {
+      "id": "9059ae2c3cd54e0c850bcd5ed3cdbeca",
+      "name": "status change test",
+      "city": {
+        "id": 1,
+        "national_id": 3,
+        "name": "Riyadh",
+        "priority": 10,
+        "country_id": 184,
+        "country_name": "Saudi Arabia",
+        "country_code": "SA",
+        "ar_name": "الرياض",
+        "en_name": "Riyadh"
+      },
+      "full_address": "JHGH+48 Exit 32, Hijratlaban, Riyadh 14911, Saudi Arabia",
+      "street": "JHGH+48 Exit 32, Hijratlaban, Riyadh 14911, Saudi Arabia",
+      "short_address": null,
+      "district": "",
+      "postal_code": null,
+      "coordinates": {
+        "lat": 24.62488044941838,
+        "lon": 46.57855497181117
+      },
+      "cop_enabled": false,
+      "is_pickup_option": true,
+      "is_zidship_default": true,
+      "working_hours": []
+    },
+    "expected_shipping_method_type": null,
+    "reseller_meta": null,
+    "zidship_ticket_number": null,
+    "edits_count": 0,
+    "delivered_at": null,
+    "is_marketplace_order": false,
+    "invoice_link": null,
+    "payment_network": null,
+    "previous_order": 39018292,
+    "next_order": null,
+    "invoice_settings": {
+      "is_order_notifications_enabled": true,
+      "is_zid_invoice_generation_enabled": false
+    }
+  },
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

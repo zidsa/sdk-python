@@ -1,0 +1,65 @@
+{
+  "status": "object",
+  "cashback_rules": [
+    {
+      "id": "b1e3ca5d-2a89-4993-89bf-0f31a4b70b00",
+      "external_id": "pos",
+      "store_id": "3dfc16e6-ad19-4126-9c2a-5e4a7fb73051",
+      "points_rewarded": 1,
+      "amount_to_spend": 1,
+      "available_to": null,
+      "is_active": false,
+      "created_at": "2023-12-28T10:32:13.000000Z",
+      "updated_at": "2024-08-11T10:59:24.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "efc450a4-3f09-4544-bcdd-80ddcbde23c8",
+      "external_id": "15362",
+      "store_id": "3dfc16e6-ad19-4126-9c2a-5e4a7fb73051",
+      "points_rewarded": 1,
+      "amount_to_spend": 1,
+      "available_to": {
+        "tags": [],
+        "level": {
+          "levelId": null,
+          "levelName": null
+        }
+      },
+      "is_active": true,
+      "created_at": "2023-03-29T10:55:07.000000Z",
+      "updated_at": "2024-04-25T14:24:22.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "redemption_rules": [
+    {
+      "id": "175ebe13-9070-4e7d-819e-2f8ba5797b1d",
+      "external_id": null,
+      "store_id": "3dfc16e6-ad19-4126-9c2a-5e4a7fb73051",
+      "name": "3",
+      "points_to_redeem": 3,
+      "rule_type": "fixed_rate_settings",
+      "reward": {
+        "discount_value": 1
+      },
+      "conditions": null,
+      "is_active": false,
+      "created_at": "2023-10-26T10:59:16.000000Z",
+      "updated_at": "2024-04-25T19:55:04.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "total_earned_points": 1271060,
+  "total_redemed_points": 2004,
+  "total_pending_points": 51419,
+  "total_customers_with_points": 48,
+  "expiration_peroid": 5,
+  "is_active": true,
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

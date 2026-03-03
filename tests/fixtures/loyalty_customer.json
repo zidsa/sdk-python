@@ -1,0 +1,45 @@
+{
+  "status": "object",
+  "loyalty_points_info": {
+    "points_balance": 0,
+    "pending_points_balance": 10,
+    "pending_negative_points_balance": 0,
+    "available_poitns": 0,
+    "used_poitns": 6826,
+    "total_positive_points": 6836,
+    "history": [
+      {
+        "date": "2026-02-16T19:41:52.000000Z",
+        "reason": "Expired pending transaction",
+        "points": 135,
+        "direction": "-",
+        "type": "expiry",
+        "order_number": null,
+        "order_code": null,
+        "expiry_date": null,
+        "point_status": "Expired",
+        "point_status_code": "expired",
+        "collection_method": "Points expired"
+      },
+      {
+        "date": "2026-02-11T11:59:28.000000Z",
+        "reason": null,
+        "points": 10,
+        "direction": "+",
+        "type": "reward",
+        "order_number": 64855100,
+        "order_code": "x8uwLv8aa5",
+        "expiry_date": "2026-03-13T11:59:28.000000Z",
+        "point_status": "Pending",
+        "point_status_code": "pending",
+        "collection_method": "Reward for a placed order"
+      }
+    ]
+  },
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

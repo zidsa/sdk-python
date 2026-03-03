@@ -1,0 +1,1066 @@
+{
+  "status": "object",
+  "orders": [
+    {
+      "id": 39018491,
+      "invoice_number": 39018491,
+      "code": "zrDH30DWiX",
+      "store_id": 1,
+      "order_url": "https://teststore.zidtest.com/o/zrDH30DWiX/inv",
+      "store_name": "Test Store",
+      "shipping_method_code": null,
+      "store_url": "https://teststore.zidtest.com/",
+      "order_status": {
+        "name": "New",
+        "code": "new"
+      },
+      "display_status": {
+        "id": 1,
+        "code": "new",
+        "color": "#3498db",
+        "name": "New"
+      },
+      "currency_code": "SAR",
+      "customer": {
+        "id": 257,
+        "name": "Test User 5",
+        "email": "testuser5@example.com",
+        "mobile": "966500000006",
+        "note": "",
+        "verified": 1,
+        "type": "individual"
+      },
+      "has_different_consignee": 0,
+      "is_guest_customer": 0,
+      "is_gift_order": 0,
+      "gift_card_details": null,
+      "is_quick_checkout_order": false,
+      "order_total": "100.00000000000000",
+      "order_total_string": "100.00 SAR",
+      "has_different_transaction_currency": false,
+      "transaction_reference": null,
+      "transaction_amount": 100,
+      "transaction_amount_string": "100.00 SAR",
+      "issue_date": "31-01-2026 | 03:56 ص",
+      "payment_status": "pending",
+      "is_potential_fraud": false,
+      "source": "Merchant Admin",
+      "source_code": "md",
+      "is_reseller_transaction": false,
+      "created_at": "2026-01-30 15:56:02",
+      "updated_at": "2026-01-30 15:56:06",
+      "is_on_demand": false,
+      "import_id": null,
+      "tags": [],
+      "requires_shipping": false,
+      "should_merchant_set_shipping_method": false,
+      "shipping": {
+        "method": {
+          "id": null,
+          "name": "Doesn't Require Shipping",
+          "code": null,
+          "estimated_delivery_time": null,
+          "icon": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/static/delivery.png",
+          "is_system_option": false,
+          "waybill": null,
+          "had_errors_while_fetching_waybill": false,
+          "waybill_tracking_id": null,
+          "has_waybill_and_packing_list": false,
+          "tracking": {
+            "number": null,
+            "status": null,
+            "url": null
+          },
+          "courier": null,
+          "return_shipment": null,
+          "packages_count": null
+        },
+        "address": {
+          "formatted_address": "N/A",
+          "street": "street",
+          "district": "disc",
+          "lat": null,
+          "lng": null,
+          "short_address": null,
+          "meta": {
+            "postcode": "000000",
+            "building_number": "3"
+          },
+          "city": {
+            "id": 2,
+            "name": "Al Hariq"
+          },
+          "country": {
+            "id": 184,
+            "name": "Saudi Arabia",
+            "code": "SA"
+          }
+        }
+      },
+      "payment": {
+        "method": {
+          "name": "Bank Transfer",
+          "code": "zid_bank_transfer",
+          "type": "zid_bank_transfer",
+          "transaction_status": "transfered",
+          "transaction_status_name": "Confirmed",
+          "transaction_bank": "The National Commercial Bank",
+          "transaction_slip": "https://zid-testing-907587157081.s3-accelerate.amazonaws.com/public/catalog/1/bts/JL5WoYplbId6BRB3anJIMu3pukFk8rcNP2rqbmN6.png",
+          "transaction_sender_name": "",
+          "updated_at": "2026-01-30 15:56:05"
+        },
+        "invoice": [
+          {
+            "code": "sub_totals_before_vat",
+            "value": "100.00000000000000",
+            "value_string": "100.00 SAR",
+            "title": "Total without VAT"
+          },
+          {
+            "code": "taxable_amount",
+            "value": "0.00000000000000",
+            "value_string": "0.00 SAR",
+            "title": "Taxable amount"
+          },
+          {
+            "code": "vat",
+            "value": "0.00000000000000",
+            "value_string": "0.00 SAR",
+            "title": "VAT (%15)"
+          },
+          {
+            "code": "sub_totals_after_vat",
+            "value": "100.00000000000000",
+            "value_string": "100.00 SAR",
+            "title": "Total Inc. VAT"
+          },
+          {
+            "code": "total",
+            "value": "100.00000000000000",
+            "value_string": "100.00 SAR",
+            "title": "Total"
+          }
+        ]
+      },
+      "cod_confirmed": false,
+      "reverse_order_label_request": null,
+      "reverse_order_label_requests": [],
+      "customer_note": "",
+      "gift_message": null,
+      "payment_link": null,
+      "weight": 0,
+      "weight_cost_details": [],
+      "currency": {
+        "order_currency": {
+          "id": 4,
+          "code": "SAR",
+          "exchange_rate": 1
+        },
+        "order_store_currency": {
+          "id": 4,
+          "code": "SAR",
+          "exchange_rate": null
+        }
+      },
+      "coupon": null,
+      "products": [
+        {
+          "id": "23edd6a6-3533-495d-8ffc-7f9e7c8c1f6a",
+          "order_product_id": 62262,
+          "parent_id": null,
+          "parent_name": null,
+          "product_class": null,
+          "name": "نسخة من TrialProduct",
+          "short_description": null,
+          "sku": "Z.1.1723970467001006",
+          "barcode": null,
+          "custom_fields": [
+            {
+              "price_settings": {
+                "1ee4d618-42f2-4e07-a1be-7a33062ea069": "02a3a20b-acda-4b36-a311-61817dd3f7d8"
+              },
+              "group_id": "1ee4d618-42f2-4e07-a1be-7a33062ea069",
+              "group_name": "",
+              "label": "List",
+              "name": "1",
+              "value": "✔",
+              "type": "DROPDOWN",
+              "net_additions_price_string": "0.00 SAR",
+              "gross_additions_price_string": "0.00 SAR",
+              "additions_price_string": "0.00 SAR",
+              "net_additions_price": "0",
+              "gross_additions_price": "0",
+              "additions_price": "0",
+              "formatted_value": "✔"
+            }
+          ],
+          "quantity": 1,
+          "weight": null,
+          "is_taxable": false,
+          "is_discounted": false,
+          "meta": null,
+          "is_external_product": false,
+          "discounts": [],
+          "net_price_with_additions": 100,
+          "net_price_with_additions_string": "100.00 SAR",
+          "price_with_additions": 100,
+          "price_with_additions_string": "100.00 SAR",
+          "net_price": 100,
+          "net_price_string": "100.00 SAR",
+          "net_sale_price": null,
+          "net_sale_price_string": null,
+          "net_additions_price": 0,
+          "net_additions_price_string": null,
+          "gross_price": 100,
+          "gross_price_string": "100.00 SAR",
+          "gross_sale_price": null,
+          "gross_sale_price_string": null,
+          "price_before": null,
+          "price_before_string": null,
+          "total_before": null,
+          "total_before_string": null,
+          "gross_additions_price": 0,
+          "gross_additions_price_string": null,
+          "discount_percentage": 0,
+          "tax_percentage": 0,
+          "tax_amount": "0.00000000000000",
+          "tax_amount_string": "0.00 SAR",
+          "tax_amount_string_per_item": "0.00 SAR",
+          "discounted_tax_amount": 0,
+          "discounted_tax_amount_string": "0.00 SAR",
+          "discounted_tax_amount_string_per_item": "0.00 SAR",
+          "price": 100,
+          "price_string": "100.00 SAR",
+          "additions_price": 0,
+          "additions_price_string": "0.00 SAR",
+          "total": 100,
+          "total_string": "100.00 SAR",
+          "discounted_total": 100,
+          "discounted_total_string": "100.00 SAR",
+          "images": [
+            {
+              "id": "static",
+              "origin": "https://media.zid.store/static/missing_image.png",
+              "thumbs": {
+                "fullSize": "https://media.zid.store/static/missing_image.png",
+                "thumbnail": "https://media.zid.store/static/missing_image.png",
+                "small": "https://media.zid.store/static/missing_image.png",
+                "medium": "https://media.zid.store/static/missing_image.png",
+                "large": "https://media.zid.store/static/missing_image.png"
+              }
+            }
+          ],
+          "options": [],
+          "inventory_allocations": []
+        }
+      ],
+      "products_count": 1,
+      "products_sum_total_string": "100.00 SAR",
+      "language": "en",
+      "is_reactivated": false,
+      "return_policy": "cktest-exchange-returns-53242yyyy",
+      "packages_count": 1,
+      "inventory_address": {
+        "id": "9059ae2c3cd54e0c850bcd5ed3cdbeca",
+        "name": "status change test",
+        "city": {
+          "id": 1,
+          "national_id": 3,
+          "name": "Riyadh",
+          "priority": 10,
+          "country_id": 184,
+          "country_name": "Saudi Arabia",
+          "country_code": "SA",
+          "ar_name": "الرياض",
+          "en_name": "Riyadh"
+        },
+        "full_address": "JHGH+48 Exit 32, Hijratlaban, Riyadh 14911, Saudi Arabia",
+        "street": "JHGH+48 Exit 32, Hijratlaban, Riyadh 14911, Saudi Arabia",
+        "short_address": null,
+        "district": "",
+        "postal_code": null,
+        "coordinates": {
+          "lat": 24.62488044941838,
+          "lon": 46.57855497181117
+        },
+        "cop_enabled": false,
+        "is_pickup_option": true,
+        "is_zidship_default": true,
+        "working_hours": []
+      },
+      "expected_shipping_method_type": null,
+      "reseller_meta": null,
+      "zidship_ticket_number": null,
+      "edits_count": 0,
+      "delivered_at": null,
+      "is_marketplace_order": false,
+      "invoice_link": null,
+      "payment_network": null
+    },
+    {
+      "id": 39018292,
+      "invoice_number": 39018292,
+      "code": "Q51inGF1Zv",
+      "store_id": 1,
+      "order_url": "https://teststore.zidtest.com/o/Q51inGF1Zv/inv",
+      "store_name": "Test Store",
+      "shipping_method_code": "zid_zidship.testing2",
+      "store_url": "https://teststore.zidtest.com/",
+      "order_status": {
+        "name": "Preparing",
+        "code": "preparing"
+      },
+      "display_status": {
+        "id": 2,
+        "code": "preparing",
+        "color": "#f39c12",
+        "name": "Preparing"
+      },
+      "currency_code": "SAR",
+      "customer": {
+        "id": 6,
+        "name": "Test Customer",
+        "email": "testcustomer@example.com",
+        "mobile": "966500000006",
+        "note": "",
+        "verified": 1,
+        "type": "individual"
+      },
+      "has_different_consignee": 0,
+      "is_guest_customer": 0,
+      "is_gift_order": 0,
+      "gift_card_details": null,
+      "is_quick_checkout_order": false,
+      "order_total": "223.56000086523000",
+      "order_total_string": "223.56 SAR",
+      "has_different_transaction_currency": false,
+      "transaction_reference": null,
+      "transaction_amount": 223.56000086523,
+      "transaction_amount_string": "223.56 SAR",
+      "issue_date": "22-01-2026 | 01:01 ص",
+      "payment_status": "pending",
+      "is_potential_fraud": false,
+      "source": "Store",
+      "source_code": "catalog",
+      "is_reseller_transaction": false,
+      "created_at": "2026-01-21 13:01:46",
+      "updated_at": "2026-01-28 20:46:29",
+      "is_on_demand": false,
+      "import_id": null,
+      "tags": [],
+      "requires_shipping": true,
+      "should_merchant_set_shipping_method": false,
+      "shipping": {
+        "method": {
+          "id": 5423,
+          "name": "Testing service level",
+          "code": "zid_zidship",
+          "estimated_delivery_time": "",
+          "icon": "https://testing-media-907587157081.zidship.com/thumbs/servicelevel/3413064d-d5af-4daf-88c3-abe900017075-thumbnail-370x370.png",
+          "is_system_option": true,
+          "waybill": null,
+          "had_errors_while_fetching_waybill": false,
+          "waybill_tracking_id": null,
+          "has_waybill_and_packing_list": false,
+          "tracking": {
+            "number": null,
+            "status": null,
+            "url": null
+          },
+          "order_shipping_status": "Assigned",
+          "inventory_address": [],
+          "courier": {
+            "name": {
+              "ar": "كويكبوكس",
+              "en": "kwickbox"
+            },
+            "code": "kwickbox",
+            "logo": "https://testing-media-907587157081.zidship.com/courier/04890bb5-7c65-4d41-8234-7525fbbd51e2.png",
+            "identifier": "KWICKBOX"
+          },
+          "return_shipment": null,
+          "packages_count": 1
+        },
+        "address": {
+          "formatted_address": "N/A",
+          "street": "Al Bahar Al Ahmar",
+          "district": "Al Wadi Dist.",
+          "lat": 24.897959346364,
+          "lng": 46.328659057617,
+          "short_address": "RAWA2931",
+          "meta": {
+            "building_number": "",
+            "postcode": "",
+            "additional_number": "",
+            "city_name": ""
+          },
+          "city": {
+            "id": 1,
+            "name": "Riyadh"
+          },
+          "country": {
+            "id": 184,
+            "name": "Saudi Arabia",
+            "code": "SA"
+          }
+        }
+      },
+      "payment": {
+        "method": {
+          "name": "Bank Transfer",
+          "code": "zid_bank_transfer",
+          "type": "zid_bank_transfer",
+          "transaction_status": "new",
+          "transaction_status_name": "New",
+          "transaction_bank": null,
+          "transaction_slip": null,
+          "transaction_sender_name": null,
+          "updated_at": null
+        },
+        "invoice": [
+          {
+            "code": "sub_totals_before_vat",
+            "value": "161.29032327841000",
+            "value_string": "161.29 SAR",
+            "title": "Total without VAT"
+          },
+          {
+            "code": "loyalty_redemption",
+            "value": "-1.00000000000000",
+            "value_string": "-1.00 SAR",
+            "title": "Loyalty Redemption"
+          },
+          {
+            "code": "sub_totals_after_loyalty_redemption_discount",
+            "value": "160.29032327841000",
+            "value_string": "160.29 SAR",
+            "title": "Total After Loyalty Redemption"
+          },
+          {
+            "code": "shipping",
+            "value": "20.00000000000000",
+            "value_string": "20.00 SAR",
+            "title": "Shipping"
+          },
+          {
+            "code": "taxable_amount",
+            "value": "180.29032327841000",
+            "value_string": "180.29 SAR",
+            "title": "Taxable amount"
+          },
+          {
+            "code": "vat",
+            "value": "43.26967758681800",
+            "value_string": "43.27 SAR",
+            "title": "VAT (%24)"
+          },
+          {
+            "code": "sub_totals_after_vat",
+            "value": "223.56000086523000",
+            "value_string": "223.56 SAR",
+            "title": "Total Inc. VAT"
+          },
+          {
+            "code": "total",
+            "value": "223.56000086523000",
+            "value_string": "223.56 SAR",
+            "title": "Total"
+          }
+        ]
+      },
+      "cod_confirmed": false,
+      "reverse_order_label_request": null,
+      "reverse_order_label_requests": [],
+      "customer_note": "",
+      "gift_message": null,
+      "payment_link": null,
+      "weight": 0,
+      "weight_cost_details": [],
+      "currency": {
+        "order_currency": {
+          "id": 4,
+          "code": "SAR",
+          "exchange_rate": 1
+        },
+        "order_store_currency": {
+          "id": 4,
+          "code": "SAR",
+          "exchange_rate": null
+        }
+      },
+      "coupon": null,
+      "products": [
+        {
+          "id": "de410a62-31e5-48aa-b652-c52d38ca1930",
+          "order_product_id": 62039,
+          "parent_id": null,
+          "parent_name": null,
+          "product_class": null,
+          "name": "Z.17682096113168907",
+          "short_description": null,
+          "sku": "Z.17682096113168907",
+          "barcode": null,
+          "custom_fields": [],
+          "quantity": 1,
+          "weight": null,
+          "is_taxable": true,
+          "is_discounted": false,
+          "meta": null,
+          "is_external_product": false,
+          "discounts": {
+            "loyalty_points": {
+              "amount": 1,
+              "percentage": 0.62,
+              "unit_amount": 1
+            }
+          },
+          "net_price_with_additions": 161.29032327841,
+          "net_price_with_additions_string": "161.29 SAR",
+          "price_with_additions": 200.00000086523,
+          "price_with_additions_string": "200.00 SAR",
+          "net_price": 161.29032327841,
+          "net_price_string": "161.29 SAR",
+          "net_sale_price": null,
+          "net_sale_price_string": null,
+          "net_additions_price": 0,
+          "net_additions_price_string": null,
+          "gross_price": 200.00000086523,
+          "gross_price_string": "200.00 SAR",
+          "gross_sale_price": null,
+          "gross_sale_price_string": null,
+          "price_before": null,
+          "price_before_string": null,
+          "total_before": null,
+          "total_before_string": null,
+          "gross_additions_price": 0,
+          "gross_additions_price_string": null,
+          "discount_percentage": 0.0062,
+          "tax_percentage": 0.24,
+          "tax_amount": "38.70967758681800",
+          "tax_amount_string": "38.71 SAR",
+          "tax_amount_string_per_item": "38.70 SAR",
+          "discounted_tax_amount": 38.4696775868184,
+          "discounted_tax_amount_string": "38.47 SAR",
+          "discounted_tax_amount_string_per_item": "38.47 SAR",
+          "price": 200.00000086523,
+          "price_string": "200.00 SAR",
+          "additions_price": 0,
+          "additions_price_string": "0.00 SAR",
+          "total": 200.00000086523,
+          "total_string": "200.00 SAR",
+          "discounted_total": 198.7600008652284,
+          "discounted_total_string": "198.76 SAR",
+          "images": [
+            {
+              "id": "06eaf2ee-43f5-4761-b27b-1c25760c0e69",
+              "origin": "https://zid-testing-907587157081.s3.amazonaws.com/thumbs/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69-thumbnail-500x500-70.webp",
+              "thumbs": {
+                "fullSize": "https://zid-testing-907587157081.s3.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69.webp",
+                "thumbnail": "https://zid-testing-907587157081.s3.amazonaws.com/thumbs/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69-thumbnail-370x370-70.webp",
+                "small": "https://zid-testing-907587157081.s3.amazonaws.com/thumbs/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69-thumbnail-500x500-70.webp",
+                "medium": "https://zid-testing-907587157081.s3.amazonaws.com/thumbs/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69-thumbnail-770x770-70.webp",
+                "large": "https://zid-testing-907587157081.s3.amazonaws.com/thumbs/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/06eaf2ee-43f5-4761-b27b-1c25760c0e69-thumbnail-1000x1000-70.webp"
+              }
+            }
+          ],
+          "options": [],
+          "inventory_allocations": []
+        }
+      ],
+      "products_count": 1,
+      "products_sum_total_string": "200.00 SAR",
+      "language": "ar",
+      "is_reactivated": false,
+      "return_policy": "cktest-exchange-returns-53242yyyy",
+      "packages_count": 1,
+      "inventory_address": null,
+      "expected_shipping_method_type": null,
+      "reseller_meta": null,
+      "zidship_ticket_number": null,
+      "edits_count": 2,
+      "delivered_at": null,
+      "is_marketplace_order": false,
+      "invoice_link": null,
+      "payment_network": null
+    }
+  ],
+  "grand_total": 2689,
+  "total_order_count": 2689,
+  "total_order_count_per_status": {
+    "new": 943,
+    "preparing": 221,
+    "indelivery": 47,
+    "delivered": 567,
+    "cancelled": 324,
+    "reversed": 59,
+    "ready": 428,
+    "reverse_in_progress": 92,
+    "partially_reversed": 8,
+    "initial": 0
+  },
+  "tax_settings": {
+    "can_use_vat": true,
+    "vat_activate": true,
+    "is_vat_self_paid": true,
+    "is_vat_included_in_product_price": true,
+    "is_shipping_fee_included_in_vat": true,
+    "other_countries_tax_percentage": 0.24,
+    "countries": [
+      {
+        "id": "6f18bf81-e372-4d80-bc33-51e8ed8c7608",
+        "country": {
+          "id": 183,
+          "name": {
+            "ar": "ساو تومي وبرينسيبي",
+            "en": "Sao Tome and Principe"
+          },
+          "iso_code_2": "ST",
+          "iso_code_3": "STP"
+        },
+        "tax_percentage": 0.15,
+        "vat_number": "311111111232122",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/2bae5a94-7d91-4de1-ade4-2502fb6a3176.jpg",
+        "settings": [],
+        "is_certificate_visible": true,
+        "is_vat_number_visible": true
+      },
+      {
+        "id": "d1cbe424-51e2-4313-ace3-5e0b3632ecde",
+        "country": {
+          "id": 160,
+          "name": {
+            "ar": "النرويج",
+            "en": "Norway"
+          },
+          "iso_code_2": "NO",
+          "iso_code_3": "NOR"
+        },
+        "tax_percentage": 0.6,
+        "vat_number": "1231231231321",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": true
+      },
+      {
+        "id": "c003d048-c199-405b-8053-3f3b273dec21",
+        "country": {
+          "id": 64,
+          "name": {
+            "ar": "إلسلفادور",
+            "en": "El Salvador"
+          },
+          "iso_code_2": "SV",
+          "iso_code_3": "SLV"
+        },
+        "tax_percentage": 0,
+        "vat_number": "12345",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "76a9c631-ffe8-46fc-af5f-39c7d0b4aedf",
+        "country": {
+          "id": 17,
+          "name": {
+            "ar": "البحرين",
+            "en": "Bahrain"
+          },
+          "iso_code_2": "BH",
+          "iso_code_3": "BHR"
+        },
+        "tax_percentage": 0,
+        "vat_number": "11111",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "ee8493eb-2d41-4e7f-9b34-6dde97f18ff2",
+        "country": {
+          "id": 198,
+          "name": {
+            "ar": "سان بيير وميكلون",
+            "en": "Saint Pierre and Miquelon"
+          },
+          "iso_code_2": "PM",
+          "iso_code_3": "SPM"
+        },
+        "tax_percentage": 0,
+        "vat_number": "30310301303333",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "28359f51-cab4-47bf-9ac8-3f721f120fa6",
+        "country": {
+          "id": 221,
+          "name": {
+            "ar": "الإمارات العربية المتحدة",
+            "en": "UAE"
+          },
+          "iso_code_2": "AE",
+          "iso_code_3": "ARE"
+        },
+        "tax_percentage": 0,
+        "vat_number": "8884949494",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/4cfa7429-cf7a-4340-8dd3-6fdc1634288c.png",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "85b567a2-b6e7-41b1-b7a7-5744a6fbdf59",
+        "country": {
+          "id": 1,
+          "name": {
+            "ar": "أفغانستان",
+            "en": "Afghanistan"
+          },
+          "iso_code_2": "AF",
+          "iso_code_3": "AFG"
+        },
+        "tax_percentage": 1,
+        "vat_number": "1234567890",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "f8a6baf0-74ea-419d-b4d5-692a4c172199",
+        "country": {
+          "id": 114,
+          "name": {
+            "ar": "الكويت",
+            "en": "Kuwait"
+          },
+          "iso_code_2": "KW",
+          "iso_code_3": "KWT"
+        },
+        "tax_percentage": 0.5,
+        "vat_number": "1234",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "65956959-0b5f-4a5e-b972-7705a5555a01",
+        "country": {
+          "id": 184,
+          "name": {
+            "ar": "السعودية",
+            "en": "Saudi Arabia"
+          },
+          "iso_code_2": "SA",
+          "iso_code_3": "SAU"
+        },
+        "tax_percentage": 0.15,
+        "vat_number": "2",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/41dc88e0-a08f-40dd-88ea-75a7c6c30270.jpg",
+        "settings": [],
+        "is_certificate_visible": true,
+        "is_vat_number_visible": true
+      },
+      {
+        "id": "5c9f221d-70fb-4599-9d8c-a703b7566379",
+        "country": {
+          "id": 220,
+          "name": {
+            "ar": "أوكرانيا",
+            "en": "Ukraine"
+          },
+          "iso_code_2": "UA",
+          "iso_code_3": "UKR"
+        },
+        "tax_percentage": 0.3,
+        "vat_number": "4343434311000",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/26b8cd68-12b5-4534-837d-5de69a297efd.png",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "ce170f5b-0c1f-4227-bbec-0e9ca303e1b9",
+        "country": {
+          "id": 118,
+          "name": {
+            "ar": "لبنان",
+            "en": "Lebanon"
+          },
+          "iso_code_2": "LB",
+          "iso_code_3": "LBN"
+        },
+        "tax_percentage": 0.11,
+        "vat_number": "1111",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "6a3d3480-4aba-417f-bb87-0749901b8f13",
+        "country": {
+          "id": 2,
+          "name": {
+            "ar": "ألبانيا",
+            "en": "Albania"
+          },
+          "iso_code_2": "AL",
+          "iso_code_3": "ALB"
+        },
+        "tax_percentage": 0.45,
+        "vat_number": "333",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/dee748e1-2574-4e5b-a691-95ff394d1d8e.png",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "dc0105b1-31af-49bf-aaf6-2fc26bcc002e",
+        "country": {
+          "id": 7,
+          "name": {
+            "ar": "أنغويلا",
+            "en": "Anguilla"
+          },
+          "iso_code_2": "AI",
+          "iso_code_3": "AIA"
+        },
+        "tax_percentage": 0.34,
+        "vat_number": "dfsfd",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "c965a147-a9b1-4560-9333-0f72b4855ede",
+        "country": {
+          "id": 10,
+          "name": {
+            "ar": "الأرجنتين",
+            "en": "Argentina"
+          },
+          "iso_code_2": "AR",
+          "iso_code_3": "ARG"
+        },
+        "tax_percentage": 0.22,
+        "vat_number": "222",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "56125298-3255-437f-8695-d6138ec5d701",
+        "country": {
+          "id": 16,
+          "name": {
+            "ar": "الباهاماس",
+            "en": "Bahamas"
+          },
+          "iso_code_2": "BS",
+          "iso_code_3": "BHS"
+        },
+        "tax_percentage": 0.33,
+        "vat_number": "333",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/cf49f6b5-f916-41ed-b8c8-bf3128d34e8a.png",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "611901b0-a157-4f85-8b46-ede470ec1f93",
+        "country": {
+          "id": 63,
+          "name": {
+            "ar": "مصر",
+            "en": "Egypt"
+          },
+          "iso_code_2": "EG",
+          "iso_code_3": "EGY"
+        },
+        "tax_percentage": 0,
+        "vat_number": "1234",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "1f4801c6-1e4c-4b69-bd8e-55c2b45a90d1",
+        "country": {
+          "id": 26,
+          "name": {
+            "ar": "بوليفيا",
+            "en": "Bolivia"
+          },
+          "iso_code_2": "BO",
+          "iso_code_3": "BOL"
+        },
+        "tax_percentage": 0.1,
+        "vat_number": "lhgfd",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/98087da9-2ff0-4c00-8f7f-3ed2dc5a68c2.webp",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "62654ab4-ced5-4011-a4b7-1c56f28e38ed",
+        "country": {
+          "id": 161,
+          "name": {
+            "ar": "عمان",
+            "en": "Oman"
+          },
+          "iso_code_2": "OM",
+          "iso_code_3": "OMN"
+        },
+        "tax_percentage": 0.1,
+        "vat_number": "10",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": true
+      },
+      {
+        "id": "73d650af-b417-4476-96e6-b604cdce8bb3",
+        "country": {
+          "id": 173,
+          "name": {
+            "ar": "قطر",
+            "en": "Qatar"
+          },
+          "iso_code_2": "QA",
+          "iso_code_3": "QAT"
+        },
+        "tax_percentage": 0,
+        "vat_number": "8458562356",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/c570fbea-6d7b-4032-a135-3a31b9acd145.png",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "0c03b02f-ca8d-421f-a359-30fe189fac4c",
+        "country": {
+          "id": 108,
+          "name": {
+            "ar": "الأردن",
+            "en": "Jordan"
+          },
+          "iso_code_2": "JO",
+          "iso_code_3": "JOR"
+        },
+        "tax_percentage": 0.1,
+        "vat_number": "10",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "ae7a1504-64ac-4373-8d7e-07d6c2b04e52",
+        "country": {
+          "id": 214,
+          "name": {
+            "ar": "تونس",
+            "en": "Tunisia"
+          },
+          "iso_code_2": "TN",
+          "iso_code_3": "TUN"
+        },
+        "tax_percentage": 0.1,
+        "vat_number": "10",
+        "tax_registration_certificate": null,
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      },
+      {
+        "id": "69b6030b-faa2-41fa-9332-9dd3de4b4544",
+        "country": {
+          "id": 144,
+          "name": {
+            "ar": "المغرب",
+            "en": "Morocco"
+          },
+          "iso_code_2": "MA",
+          "iso_code_3": "MAR"
+        },
+        "tax_percentage": 0.92,
+        "vat_number": "888899990000999900",
+        "tax_registration_certificate": "https://zid-testing-907587157081.s3.eu-west-1.amazonaws.com/3dfc16e6-ad19-4126-9c2a-5e4a7fb73051/c300a860-eacd-46c3-bf2d-bdb9cad3f6b3.pdf",
+        "settings": [],
+        "is_certificate_visible": false,
+        "is_vat_number_visible": false
+      }
+    ]
+  },
+  "storeColors": {
+    "btn_default_background_color": "#72cba4",
+    "btn_default_text_color": "#c8c8ea",
+    "btn_default_border_color": "#67b895",
+    "btn_hover_background_color": "#7cddb2",
+    "btn_pressed_background_color": "#67b895",
+    "btn_pressed_text_color": "#c8c8ea",
+    "btn_pressed_border_color": "#67b895"
+  },
+  "printed_invoice_settings": {
+    "is_zid_invoice_generation_enabled": false,
+    "is_tax_number_active": true,
+    "is_return_policy_active": true,
+    "is_products_weight_active": true,
+    "is_products_image_active": true,
+    "is_barcode_active": true,
+    "is_qr_code_active": true,
+    "is_expected_time_active": true,
+    "is_store_address_active": true,
+    "is_vat_settings_active": true,
+    "is_sku_active": true,
+    "is_thanks_msg_active": true,
+    "is_order_status_active": true,
+    "is_discount_coupon_active": true,
+    "config_logo": false,
+    "store_business_address": false,
+    "store_business_name": false,
+    "store_business_type": false,
+    "commercial_number": true,
+    "is_payment_stamp_active": true,
+    "is_order_notifications_enabled": true,
+    "is_owner_email_notifications_enabled": true,
+    "is_product_description_active": true,
+    "ETA": true,
+    "is_invoice_generation_enabled": true
+  },
+  "orders_list_view_settings": {
+    "order_number_column": true,
+    "customer_column": 1,
+    "created_at_column": 1,
+    "updated_at_column": 1,
+    "source_column": 1,
+    "shipping_method_column": 1,
+    "payment_method_column": 1,
+    "customer_note_column": 0,
+    "tags_column": 0,
+    "order_status_column": 1,
+    "payment_status_column": 1,
+    "totals_column": 1,
+    "action_buttons": true,
+    "all_columns": 0,
+    "order_number": 1
+  },
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

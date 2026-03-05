@@ -1,0 +1,30 @@
+{
+  "count": 2,
+  "next": null,
+  "results": [
+    {
+      "id": "81ad822e-a9b2-4d4c-8a07-7f8110915e2f",
+      "name": {
+        "ar": "اللون",
+        "en": "Color"
+      },
+      "slug": "color",
+      "value": {
+        "ar": "أسود",
+        "en": "Black"
+      }
+    },
+    {
+      "id": "92be933f-b0c3-5e5d-9b18-8g9221026f3g",
+      "name": {
+        "ar": "الحجم",
+        "en": "Size"
+      },
+      "slug": "size",
+      "value": {
+        "ar": "كبير",
+        "en": "Large"
+      }
+    }
+  ]
+}

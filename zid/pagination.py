@@ -7,6 +7,7 @@ yielding items across pages with lazy loading.
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Callable, Generic, Iterator, TypeVar
+from urllib.parse import urlparse
 
 if TYPE_CHECKING:
     from zid.http import HTTPClient
@@ -106,23 +107,28 @@ class PaginatedIterator(Generic[ModelT]):
             self._total_count = response["count"]
 
         if "next" in response:
-            self._next_url = response.get("next")
-            if self._next_url is None:
+            next_url = response.get("next")
+            if next_url is None:
                 self._exhausted = True
+            else:
+                parsed = urlparse(next_url)
+                self._next_url = parsed.path
+                if parsed.query:
+                    self._next_url += f"?{parsed.query}"
         elif "pagination" in response:
             pagination = response["pagination"]
             self._current_page = pagination.get("page", 1)
             self._next_page = pagination.get("next_page")
             self._last_page = pagination.get("last_page")
             self._total_count = pagination.get("count")
-            if self._next_page is None or self._current_page >= self._last_page:
+            if self._next_page is None or (self._last_page is not None and self._current_page >= self._last_page):
                 self._exhausted = True
         elif "next_page" in response:
             self._current_page = response.get("page", 1)
             self._next_page = response.get("next_page")
             self._last_page = response.get("last_page")
             self._total_count = response.get("count")
-            if self._next_page is None or self._current_page >= self._last_page:
+            if self._next_page is None or (self._last_page is not None and self._current_page >= self._last_page):
                 self._exhausted = True
         else:
             self._exhausted = True
@@ -168,3 +174,54 @@ class PaginatedIterator(Generic[ModelT]):
         if self._total_count is not None:
             return self._total_count
         return len(self._items)
+
+    def __bool__(self) -> bool:
+        """Return True if the iterator has any items.
+
+        Triggers a fetch if no request has been made yet.
+        """
+        if self._items:
+            return True
+        if not self._first_fetch_done:
+            self._fetch_page()
+        return len(self._items) > 0
+
+    def first(self) -> ModelT | None:
+        """Return the first item, or None if empty.
+
+        Fetches only the first page if no data has been loaded yet.
+
+        Returns:
+            The first item, or None if the iterator is empty.
+        """
+        try:
+            return next(self)
+        except StopIteration:
+            return None
+
+    def take(self, n: int) -> list[ModelT]:
+        """Return the next *n* items from the iterator.
+
+        Fetches pages lazily — only as many as needed to fill *n* items.
+        Returns fewer than *n* if the iterator is exhausted early.
+
+        Args:
+            n: Maximum number of items to return.
+
+        Returns:
+            List of up to *n* items.
+        """
+        items: list[ModelT] = []
+        for item in self:
+            items.append(item)
+            if len(items) >= n:
+                break
+        return items
+
+    def to_list(self) -> list[ModelT]:
+        """Exhaust all pages and return every item as a list.
+
+        Returns:
+            List of all items across all pages.
+        """
+        return list(self)

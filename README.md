@@ -41,7 +41,7 @@ The SDK uses OAuth 2.0 tokens obtained through Zid's OAuth flow:
 
 ```python
 client = ZidClient(
-    authorization="Bearer abc123...",
+    authorization="abc123...",
     store_token="xyz789...",
 )
 ```
@@ -60,7 +60,7 @@ def save_tokens(auth):
     )
 
 client = ZidClient(
-    authorization="Bearer abc123...",
+    authorization="abc123...",
     store_token="xyz789...",
     refresh_token="refresh-token",
     client_id="48",
@@ -72,31 +72,69 @@ client = ZidClient(
 
 When a request fails with 401, the SDK will automatically refresh tokens and retry.
 
+## Features
+
+- 13 resources, 50+ typed Pydantic models with full IDE autocomplete
+- Composable sub-resources (e.g. `client.products.images`, `client.products.variants`)
+- Automatic pagination across cursor-based and offset/limit APIs
+- Auto token refresh with a callback to persist new credentials
+- Retry with exponential backoff, jitter, and rate limit handling
+- Dict-style access on models (`order["id"]` works alongside `order.id`)
+- `.raw` property on every model to access undocumented API fields
+- Automatic camelCase ↔ snake_case field mapping
+- Lazy resource initialization — resources are created on first access
+
 ## Resources
+
+### Products
+
+```python
+# List products
+for product in client.products.list():
+    print(product.id, product.name)
+
+# CRUD
+product = client.products.get("product-uuid")
+product = client.products.create(name="Wireless Headphones", price=257, sku="WH-1000XM5")
+product = client.products.update("product-uuid", price=79.99)
+client.products.delete("product-uuid")
+
+# Sub-resources
+images = client.products.images.list("product-uuid")
+client.products.images.upload("product-uuid", image=("photo.jpg", b"...", "image/jpeg"), alt_text="Front view")
+client.products.variants.create("product-uuid", variants=[{"sku": "WH-BLK", "price": 257, "attributes": [...]}])
+stocks = client.products.stocks.list("product-uuid")
+categories = client.products.categories.list()
+notifications = client.products.notifications.list(product_id="product-uuid")
+```
 
 ### Orders
 
 ```python
-# List orders (paginated)
+# List orders (paginated, filterable)
 for order in client.orders.list():
     print(order.id, order.order_status.code)
 
-# Filter by status
-for order in client.orders.list(order_status="new"):
-    print(order.id)
+for order in client.orders.list(order_status="new", payload_type="default"):
+    print(order.id, order.products)
 
-# Get full order details with products
-for order in client.orders.list(payload_type="default"):
-    print(order.products)
-
-# Get a specific order
+# Get, update status, credit notes
 order = client.orders.get(12345)
-
-# Update order status
 client.orders.update_status(12345, order_status="preparing")
-
-# Get credit notes
 credit_notes = client.orders.list_credit_notes(12345)
+
+# Create a draft order (requires customer, consignee, products, shipping, payment)
+order = client.orders.create(
+    currency_code="SAR",
+    customer={"full_name": "John Doe", "mobile_country_code": "966", "mobile_number": "500000000"},
+    consignee={
+        "contact": {"full_name": "John Doe", "mobile_country_code": "966", "mobile_number": "500000000"},
+        "address": {"line_1": "King Fahd Road", "city_name": "Riyadh", "country_code": "SA"},
+    },
+    products=[{"sku": "PROD-SKU-123", "quantity": 1}],
+    shipping_method={"type": "delivery", "id": 432480},
+    payment_method={"id": 555224},
+)
 ```
 
 ### Customers
@@ -110,112 +148,23 @@ for customer in client.customers.list():
 customer = client.customers.get(12345)
 ```
 
-### Locations (Multi-Inventory)
+### Other Resources
 
-```python
-# List inventory locations
-for location in client.locations.list():
-    print(location.name, location.is_default)
+| Resource | Accessor | Key Methods |
+|---|---|---|
+| Coupons | `client.coupons` | `list()`, `get(id)`, `create(...)`, `delete(id)` |
+| Locations | `client.locations` | `list()`, `get(id)`, `create(...)`, `update(...)`, `update_stock(id, items)` |
+| Abandoned Carts | `client.abandoned_carts` | `list()`, `get(cart_uuid)` |
+| Reverse Orders | `client.reverse_orders` | `create(...)`, `list_reasons()`, `refund(...)`, `create_waybill(...)` |
+| Delivery Options | `client.delivery_options` | `list()` |
+| Payment Methods | `client.payment_methods` | `list()` |
+| Store Profile | `client.stores` | `get_profile()`, `get_vat_settings()` |
+| Geography | `client.geography` | `list_operating_countries()`, `list_all_countries()`, `list_cities(country_id)` |
+| Webhooks | `client.webhooks` | `list()`, `create(event, target_url, original_id)`, `delete(original_id)` |
+| Bundle Offers | `client.bundle_offers` | `list()` |
+| Loyalty | `client.loyalty` | `get_status()`, `get_program()`, `get_customer_summary(customer_id)`, `adjust_customer_points(...)` |
 
-# Get a specific location
-location = client.locations.get("location-uuid")
-
-# Create a location
-location = client.locations.create(
-    name="Warehouse 2",
-    city_id=123,
-    address="123 Main St",
-)
-
-# Update stock
-client.locations.update_stock(
-    location_id="location-uuid",
-    products=[{"product_id": 1, "quantity": 100}],
-)
-```
-
-### Abandoned Carts
-
-```python
-# List abandoned carts
-for cart in client.abandoned_carts.list():
-    print(cart.id, cart.customer_name)
-
-# Get cart details
-cart = client.abandoned_carts.get(12345)
-```
-
-### Reverse Orders (Returns/Refunds)
-
-```python
-# List return reasons
-reasons = client.reverse_orders.list_reasons()
-
-# Create a reverse order
-reverse = client.reverse_orders.create(
-    order_id=12345,
-    products=[{"product_id": 1, "quantity": 1}],
-)
-```
-
-### Delivery Options
-
-```python
-# List delivery options
-for option in client.delivery_options.list():
-    print(option.id, option.name)
-```
-
-### Payment Methods
-
-```python
-# List payment methods
-methods = client.payment_methods.list()
-for method in methods:
-    print(method.code, method.name)
-```
-
-### Store Profile
-
-```python
-# Get store profile
-profile = client.stores.get_profile()
-print(profile.store.name)
-
-# Get VAT settings
-vat = client.stores.get_vat_settings()
-```
-
-### Geography (Countries & Cities)
-
-```python
-# List countries where store operates
-countries = client.geography.list_operating()
-
-# List all countries
-for country in client.geography.list_all():
-    print(country.name)
-
-# List cities by country
-cities = client.geography.list_by_country(country_id=1)
-```
-
-### Webhooks
-
-```python
-# List webhooks
-webhooks = client.webhooks.list()
-
-# Create a webhook
-webhook = client.webhooks.create(
-    event="order.create",
-    target_url="https://example.com/webhook",
-    original_id="my-app-id",
-)
-
-# Delete a webhook
-client.webhooks.delete(original_id="my-app-id")
-```
+All list methods return a `PaginatedIterator`. All resources have full docstrings — use your IDE's autocomplete or `help()` for parameter details.
 
 ## Pagination
 
@@ -233,6 +182,11 @@ print(f"Total orders: {len(orders)}")
 # Control page size
 for order in client.orders.list(per_page=100):
     print(order.id)
+
+# Convenience methods
+latest = client.orders.list(order_status="new").first()
+top_5 = client.products.list().take(5)
+all_customers = client.customers.list().to_list()
 ```
 
 ## Error Handling
@@ -321,8 +275,8 @@ client = ZidClient(
     store_token="...",
     retry=RetryConfig(
         max_retries=5,              # Number of retry attempts
-        base_delay=1.0,             # Initial delay (seconds)
-        max_delay=60.0,             # Maximum delay between retries
+        base_delay=0.5,             # Initial delay (seconds)
+        max_delay=30.0,             # Maximum delay between retries
         retry_on_rate_limit=True,   # Auto-wait on 429 responses
         max_rate_limit_wait=120.0,  # Max seconds to wait for rate limit
     ),

@@ -1,0 +1,35 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "e44bbf6b-c62a-4597-b87f-311fba0e0256",
+      "location": {
+        "id": "8ee590fe-d02d-4c50-9184-f628bb8b115a",
+        "name": {
+          "ar": "الرياض - فرع عبد العزيز",
+          "en": "Riyadh - Abdul Aziz Branch"
+        },
+        "type": "PHYSICAL",
+        "full_address": "6137 King Abdul Aziz Branch Rd, An Nafal, Riyadh 13312, Saudi Arabia"
+      },
+      "available_quantity": null,
+      "is_infinite": true
+    },
+    {
+      "id": "0abacb3a-6a43-474d-b1c9-097e95824117",
+      "location": {
+        "id": "982a2aac-b9af-44e3-a3e0-51d2faa6b7c2",
+        "name": {
+          "ar": "جدة - المستودع",
+          "en": "Jeddah - Warehouse"
+        },
+        "type": "PHYSICAL",
+        "full_address": "2345 Warehouse District, Jeddah 21442, Saudi Arabia"
+      },
+      "available_quantity": 25,
+      "is_infinite": false
+    }
+  ]
+}

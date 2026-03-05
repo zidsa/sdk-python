@@ -6,7 +6,10 @@ the Zid Orders API.
 
 from __future__ import annotations
 
-from typing import Any, Literal, overload
+from typing import TYPE_CHECKING, Any, Literal, overload
+
+if TYPE_CHECKING:
+    from zid.http import HTTPClient
 
 from zid.models.order import (
     CreditNote,

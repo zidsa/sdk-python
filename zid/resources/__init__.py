@@ -11,6 +11,7 @@ Available Resources:
     - ReverseOrdersResource: Handle returns and refunds
     - DeliveryOptionsResource: Shipping/delivery configuration
     - PaymentMethodsResource: Payment method configuration
+    - ProductsResource: Product management (CRUD, settings, sub-resources)
     - StoresResource: Store profile and settings
     - GeographyResource: Countries and cities data
     - WebhooksResource: Webhook subscriptions
@@ -37,6 +38,7 @@ from zid.resources.locations import LocationsResource
 from zid.resources.loyalty import LoyaltyResource
 from zid.resources.orders import OrdersResource
 from zid.resources.payment_methods import PaymentMethodsResource
+from zid.resources.products import ProductsResource
 from zid.resources.reverse_orders import ReverseOrdersResource
 from zid.resources.stores import StoresResource
 from zid.resources.webhooks import WebhooksResource
@@ -52,6 +54,7 @@ __all__ = [
     "LoyaltyResource",
     "OrdersResource",
     "PaymentMethodsResource",
+    "ProductsResource",
     "ReverseOrdersResource",
     "StoresResource",
     "WebhooksResource",

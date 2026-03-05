@@ -1,0 +1,130 @@
+{
+  "status": "object",
+  "categories": [
+    {
+      "id": 1473477,
+      "uuid": "8cc71774-bf3e-4383-9778-64d50d965dc7",
+      "name": "test sub",
+      "slug": "تصنيف-فرعي",
+      "SEO_category_title": "test sub",
+      "SEO_category_description": "Sub category 1",
+      "names": {
+        "en": "test sub",
+        "ar": "تصنيف فرعي"
+      },
+      "description": null,
+      "url": "https://osama.zid.store/categories/1473477/تصنيف-فرعي",
+      "image": null,
+      "image_full_size": null,
+      "img_alt_text": "",
+      "products_count": 1,
+      "sub_categories": [],
+      "parent_id": null,
+      "flat_name": "test sub",
+      "is_published": false,
+      "metafields": [
+        {
+          "id": "2cf0cf26-d468-452a-9492-2fe5970c3cd8",
+          "name": {
+            "ar": "لون",
+            "en": "Color"
+          },
+          "slug": "Color-1",
+          "data_type": "text",
+          "display_order": 3,
+          "structure_definition": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": 1259096,
+      "uuid": "04f0beee-dc62-4289-8bb7-f9956263539d",
+      "name": "sdf",
+      "slug": "sdf",
+      "SEO_category_title": "sdf",
+      "SEO_category_description": "sdf",
+      "names": {
+        "en": "sdf",
+        "ar": "حقائب"
+      },
+      "description": null,
+      "url": "https://osama.zid.store/categories/1259096/sdf",
+      "image": "https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/c8f7402e-1573-45d5-b3e0-0449e3e5c9c6-260x260.jpg",
+      "image_full_size": "https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/c8f7402e-1573-45d5-b3e0-0449e3e5c9c6.jpg",
+      "img_alt_text": "",
+      "products_count": 3,
+      "sub_categories": [
+        {
+          "id": 1399659,
+          "uuid": "15e3bad4-a9b3-43be-94ba-84e70e15b1a9",
+          "name": "purses",
+          "slug": "شنط-1",
+          "SEO_category_title": "",
+          "SEO_category_description": "",
+          "names": {
+            "ar": "شنط",
+            "en": "purses"
+          },
+          "description": null,
+          "url": "https://osama.zid.store/categories/1399659/شنط-1",
+          "image": null,
+          "image_full_size": null,
+          "img_alt_text": "",
+          "products_count": null,
+          "sub_categories": [],
+          "parent_id": 1259096,
+          "flat_name": "sdf - purses",
+          "is_published": true,
+          "metafields": []
+        }
+      ],
+      "parent_id": null,
+      "flat_name": "sdf",
+      "is_published": true,
+      "metafields": [
+        {
+          "id": "ff173ea4-429c-40f0-a6a0-8e29e655ea83",
+          "name": {
+            "ar": null,
+            "en": "date"
+          },
+          "slug": "date",
+          "data_type": "date",
+          "display_order": 1,
+          "structure_definition": null,
+          "value": null
+        }
+      ]
+    }
+  ],
+  "minimal_categories": [
+    {
+      "id": 1473477,
+      "uuid": "8cc71774-bf3e-4383-9778-64d50d965dc7",
+      "name": "test sub",
+      "is_published": false
+    },
+    {
+      "id": 1259096,
+      "uuid": "04f0beee-dc62-4289-8bb7-f9956263539d",
+      "name": "sdf",
+      "is_published": true,
+      "children": [
+        {
+          "id": 1399659,
+          "uuid": "15e3bad4-a9b3-43be-94ba-84e70e15b1a9",
+          "name": "purses",
+          "is_published": true
+        }
+      ]
+    }
+  ],
+  "products_count": 4348,
+  "message": {
+    "type": "object",
+    "code": null,
+    "name": null,
+    "description": null
+  }
+}

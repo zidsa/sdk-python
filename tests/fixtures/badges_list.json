@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "body": {
+        "ar": "خصم {discount_percent}",
+        "en": "{discount_percent} Discount"
+      },
+      "is_example": true,
+      "icon": {
+        "code": "discount_percent"
+      }
+    },
+    {
+      "body": {
+        "ar": "خصم 10%",
+        "en": "10% discount"
+      },
+      "is_example": false,
+      "icon": null
+    },
+    {
+      "body": {
+        "ar": "شحن مجاني",
+        "en": "Free Shipping"
+      },
+      "is_example": false,
+      "icon": null
+    }
+  ]
+}

@@ -218,7 +218,8 @@ class HTTPClient:
 
         if status_code in (400, 422):
             errors = self._extract_validation_errors(body)
-            detail = body.get("detail") if isinstance(body.get("detail"), list) else None
+            raw_detail = body.get("detail")
+            detail = raw_detail if isinstance(raw_detail, list) else None
             raise ZidValidationError(
                 message=message,
                 status_code=status_code,
@@ -289,7 +290,7 @@ class HTTPClient:
         path: str,
         *,
         params: dict[str, Any] | None = None,
-        json: dict[str, Any] | None = None,
+        json: dict[str, Any] | list[Any] | None = None,
         data: dict[str, Any] | None = None,
         headers: dict[str, str] | None = None,
         token_header: str = "X-Manager-Token",
@@ -361,7 +362,7 @@ class HTTPClient:
         path: str,
         *,
         params: dict[str, Any] | None = None,
-        json: dict[str, Any] | None = None,
+        json: dict[str, Any] | list[Any] | None = None,
         data: dict[str, Any] | None = None,
         headers: dict[str, str] | None = None,
         token_header: str = "X-Manager-Token",
@@ -445,6 +446,10 @@ class HTTPClient:
                 self._raise_for_status(response)
 
                 if response.status_code == 204:
+                    return None
+
+                content = response.content
+                if not content or not content.strip():
                     return None
 
                 return response.json()

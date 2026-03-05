@@ -1,0 +1,63 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "0d8f7dc9-423d-4e54-ab47-6c170f4c0d84",
+      "product_id": "a7ad89d0-03e2-430f-b6e4-0624ef05e571",
+      "product_name": {
+        "ar": "لوحة",
+        "en": "voucher-no1 & small size"
+      },
+      "customer": {
+        "id": 1,
+        "name": "مازن الضراب",
+        "email": "test@test.com",
+        "phone_number": "+966501234567"
+      },
+      "language": "ar",
+      "is_notified": false,
+      "image": {
+        "full_size": "https://media.zid.store/full.png",
+        "thumbnail": "https://media.zid.store/thumb.png",
+        "large": "https://media.zid.store/large.png",
+        "medium": "https://media.zid.store/medium.png",
+        "small": "https://media.zid.store/small.png"
+      },
+      "created_at": "2026-02-04T11:10:41.514985Z",
+      "updated_at": "2026-02-04T11:11:13.666533Z",
+      "code": "5XRDXCSL",
+      "is_purchased": false,
+      "purchased_total": 0
+    },
+    {
+      "id": "b3e1a2c4-5678-4def-9012-abcdef345678",
+      "product_id": "c8b2d1e0-1234-5678-abcd-ef0123456789",
+      "product_name": {
+        "ar": "سماعات لاسلكية",
+        "en": "Wireless Headphones"
+      },
+      "customer": {
+        "id": 42,
+        "name": "Ahmed Ali",
+        "email": "ahmed@example.com",
+        "phone_number": "+966509876543"
+      },
+      "language": "en",
+      "is_notified": true,
+      "image": {
+        "full_size": "https://media.zid.store/headphones-full.png",
+        "thumbnail": "https://media.zid.store/headphones-thumb.png",
+        "large": "https://media.zid.store/headphones-large.png",
+        "medium": "https://media.zid.store/headphones-medium.png",
+        "small": "https://media.zid.store/headphones-small.png"
+      },
+      "created_at": "2026-01-15T08:30:00.000000Z",
+      "updated_at": "2026-02-01T14:22:10.000000Z",
+      "code": "A1B2C3D4",
+      "is_purchased": true,
+      "purchased_total": 257
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "id": "2829a483-4336-43ab-a855-84532c9419c2",
+  "product_class": null,
+  "sku": "4741-c",
+  "barcode": "",
+  "parent_id": null,
+  "name": {
+    "ar": "بخاخ منظف كاربوريتر  QV5-200 100 Miles"
+  },
+  "slug": "بخاخ-منظف-كاربوريتر-qv5-200-100-miles",
+  "price": 9,
+  "short_description": { "ar": "", "en": "" },
+  "sale_price": null,
+  "formatted_price": " SAR 9.00",
+  "formatted_sale_price": null,
+  "currency": "SAR",
+  "currency_symbol": " SAR ",
+  "attributes": [
+    {
+      "id": "1ac221ff-f1d4-4abc-9995-45609e0faa7d",
+      "slug": "ar-بارد-ساخن-و-باردt-en-180",
+      "name": "بارد / ساخن و بارد",
+      "value": { "ar": "بارد" },
+      "type": "default",
+      "type_value": { "ar": "", "en": "" },
+      "product_id": "2829a483-4336-43ab-a855-84532c9419c2",
+      "attribute_image_id": null,
+      "display_order": null,
+      "attribute_id": "eee2e93e-f055-4a28-8f26-e8bac9e9e17f",
+      "attribute_display_order": null,
+      "use_as_filter": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "1346690",
+      "name": { "en": "Test", "ar": "Test" },
+      "slug": "test",
+      "description": { "en": "", "ar": "" },
+      "cover_image": null,
+      "image": "d297fb8b-c322-412e-a2f4-ffa96dc57022/0317d05b-be80-4db4-9fb7-a3616866abcf.jpg",
+      "display_order": 32767,
+      "meta": { "childs": [], "parents": [] }
+    },
+    {
+      "id": "1400850",
+      "name": { "en": "ANNIVERSARY", "ar": "ANNIVERSARY" },
+      "slug": "anniversary",
+      "description": { "en": "", "ar": "" },
+      "cover_image": null,
+      "image": null,
+      "display_order": 32767,
+      "meta": { "childs": [], "parents": [] }
+    }
+  ],
+  "display_order": null,
+  "has_options": true,
+  "has_fields": false,
+  "images": [
+    {
+      "id": "d464301e-d7ce-403d-a2b6-df2d0e4daf88",
+      "image": {
+        "thumbnail": "https://media.zid.store/thumbs/d464301e-thumb.jpg",
+        "full_size": "https://media.zid.store/thumbs/d464301e-full.jpg",
+        "medium": "https://media.zid.store/thumbs/d464301e-medium.jpg",
+        "small": "https://media.zid.store/thumbs/d464301e-small.jpg",
+        "large": "https://media.zid.store/thumbs/d464301e-large.jpg"
+      },
+      "alt_text": "",
+      "display_order": 1
+    }
+  ],
+  "videos": [],
+  "is_draft": false,
+  "quantity": 0,
+  "is_infinite": false,
+  "html_url": "https://osama.zid.store/products/بخاخ-منظف-كاربوريتر-qv5-200-100-miles",
+  "weight": { "value": 0.5, "unit": "kg" },
+  "keywords": [],
+  "requires_shipping": true,
+  "is_taxable": true,
+  "structure": "parent",
+  "seo": {
+    "title": { "ar": "", "en": "" },
+    "description": { "ar": "", "en": "" }
+  },
+  "rating": {
+    "average": 0,
+    "total_count": 0,
+    "1_ratings": { "percentage": 0, "count": 0 },
+    "2_ratings": { "percentage": 0, "count": 0 },
+    "3_ratings": { "percentage": 0, "count": 0 },
+    "4_ratings": { "percentage": 0, "count": 0 },
+    "5_ratings": { "percentage": 0, "count": 0 }
+  },
+  "store_id": 3,
+  "purchase_restrictions": {
+    "min_quantity_per_cart": 1,
+    "max_quantity_per_cart": 1,
+    "availability_period_start": null,
+    "availability_period_end": null,
+    "sale_price_period_start": null,
+    "sale_price_period_end": null
+  },
+  "metafields": [
+    {
+      "id": "d2eebc1f-4c4b-4268-bbf2-c463aa3c7a71",
+      "name": { "en": "Calories", "ar": "السعرات الحرارية" },
+      "slug": "calories",
+      "data_type": "number",
+      "display_order": 10,
+      "value": null
+    }
+  ],
+  "meta": {},
+  "related_products_settings": "AUTO_GENERATED",
+  "related_products_title": { "ar": "", "en": "" },
+  "badge": {
+    "body": { "ar": "يباع سريعًا", "en": "Selling fast" },
+    "icon": { "code": "selling_fast" }
+  },
+  "variants": [
+    {
+      "id": "4b30b53a-72c1-4a6c-b225-de8ce7a70559",
+      "product_class": null,
+      "sku": "Z.17657946790465753",
+      "barcode": "",
+      "parent_id": "2829a483-4336-43ab-a855-84532c9419c2",
+      "name": { "ar": "بخاخ منظف - 12" },
+      "slug": "en-بخاخ-منظف-12",
+      "price": 9,
+      "short_description": { "ar": "", "en": "" },
+      "sale_price": null,
+      "formatted_price": " SAR 9.00",
+      "formatted_sale_price": null,
+      "currency": "SAR",
+      "currency_symbol": " SAR ",
+      "attributes": [
+        {
+          "id": "86d2e3da-ad4d-4e42-b40c-5b6c5886a336",
+          "slug": "ar-درجة-اللون-en",
+          "name": "درجة اللون",
+          "value": { "en": "12" },
+          "type": "default",
+          "type_value": { "ar": "", "en": "" },
+          "product_id": "4b30b53a-72c1-4a6c-b225-de8ce7a70559",
+          "attribute_image_id": null,
+          "display_order": 1,
+          "attribute_id": "230192a3-9aef-4dde-aba3-836cc43f9ae6",
+          "attribute_display_order": 1,
+          "use_as_filter": false
+        }
+      ],
+      "categories": [],
+      "display_order": null,
+      "has_options": false,
+      "has_fields": false,
+      "images": [],
+      "videos": [],
+      "is_draft": false,
+      "quantity": 0,
+      "is_infinite": false,
+      "html_url": "https://osama.zid.store/products/بخاخ-منظف-12",
+      "weight": { "value": 0.5, "unit": "kg" },
+      "keywords": [],
+      "requires_shipping": true,
+      "is_taxable": true,
+      "structure": "child",
+      "seo": null,
+      "rating": {
+        "average": 0,
+        "total_count": 0,
+        "1_ratings": { "percentage": 0, "count": 0 },
+        "2_ratings": { "percentage": 0, "count": 0 },
+        "3_ratings": { "percentage": 0, "count": 0 },
+        "4_ratings": { "percentage": 0, "count": 0 },
+        "5_ratings": { "percentage": 0, "count": 0 }
+      },
+      "store_id": 3,
+      "purchase_restrictions": {
+        "min_quantity_per_cart": null,
+        "max_quantity_per_cart": null,
+        "availability_period_start": null,
+        "availability_period_end": null,
+        "sale_price_period_start": null,
+        "sale_price_period_end": null
+      },
+      "metafields": [],
+      "meta": null,
+      "related_products_settings": "AUTO_GENERATED",
+      "related_products_title": { "ar": "", "en": "" },
+      "badge": null,
+      "cost": null,
+      "is_published": true,
+      "waiting_customers_count": null,
+      "group_products": null,
+      "stocks": [
+        {
+          "id": "4b1b15f7-e22c-4b24-b5e8-c87bece4b1b1",
+          "location": {
+            "id": "8ee590fe-d02d-4c50-9184-f628bb8b115a",
+            "name": { "ar": "الرياض" },
+            "type": "PHYSICAL",
+            "full_address": "6137 King Abdul Aziz Branch Rd, Riyadh"
+          },
+          "available_quantity": 0,
+          "is_infinite": false
+        }
+      ],
+      "sold_products_count": null,
+      "created_at": "2025-12-15T10:31:19.067786Z",
+      "updated_at": "2025-12-15T10:31:19.067804Z"
+    }
+  ],
+  "cost": null,
+  "is_published": true,
+  "waiting_customers_count": null,
+  "description": {
+    "ar": "<p>وصف المنتج</p>",
+    "en": "Product description"
+  },
+  "custom_user_input_fields": [],
+  "custom_option_fields": [],
+  "options": [
+    {
+      "id": "230192a3-9aef-4dde-aba3-836cc43f9ae6",
+      "name": "درجة اللون",
+      "slug": "ar-درجة-اللون-en",
+      "choices": ["12", "55", "15"]
+    }
+  ],
+  "related_products": [],
+  "next_product": null,
+  "previous_product": null,
+  "group_products": null,
+  "stocks": [],
+  "sold_products_count": null,
+  "created_at": "2025-12-15T08:42:07.070592Z",
+  "updated_at": "2025-12-15T11:22:40.786573Z"
+}

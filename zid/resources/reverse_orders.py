@@ -18,6 +18,7 @@ from zid.resources.base import BaseResource
 
 if TYPE_CHECKING:
     from zid.http import HTTPClient
+    from zid.models.reverse_order import BankReceiptUploadResponse
 
 
 class ReverseOrdersResource(BaseResource):

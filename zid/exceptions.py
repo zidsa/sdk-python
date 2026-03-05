@@ -88,6 +88,22 @@ class ZidAuthenticationError(ZidAPIError):
     Common error codes: ERROR_SESSION_MISSING, ERROR_SESSION_INVALID.
     """
 
+    # Map known Zid error codes to actionable hints.
+    _HINTS: dict[str, str] = {
+        "ERROR_SESSION_MISSING": (
+            "Hint: No session token was found. "
+            "Make sure you're passing a valid 'store_token'."
+        ),
+        "ERROR_SESSION_INVALID": (
+            "Hint: The session token is invalid or expired. "
+            "Try refreshing your tokens or generating new ones from the Zid dashboard."
+        ),
+        "ERROR_SESSION_EXPIRED": (
+            "Hint: Your session has expired. "
+            "If auto-refresh is configured, check that your refresh_token is still valid."
+        ),
+    }
+
     def __init__(
         self,
         message: str = "Authentication failed",
@@ -102,6 +118,17 @@ class ZidAuthenticationError(ZidAPIError):
             body=body,
             error_code=error_code,
             error_type="error",
+        )
+
+    def __str__(self) -> str:
+        base = super().__str__()
+        hint = self._HINTS.get(self.error_code or "")
+        if hint:
+            return f"{base} | {hint}"
+        # Generic fallback hint when we don't recognize the error code.
+        return (
+            f"{base} | Hint: Verify your 'authorization' and 'store_token' are correct "
+            "and haven't expired."
         )
 
 

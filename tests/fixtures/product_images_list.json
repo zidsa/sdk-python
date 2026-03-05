@@ -1,0 +1,32 @@
+{
+  "next": null,
+  "previous": null,
+  "count": 2,
+  "results": [
+    {
+      "id": "0bcc247a-61fa-4a95-bab1-21827a824749",
+      "image": {
+        "large": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/0bcc247a-61fa-4a95-bab1-21827a824749-thumbnail-1000x1000-70.jpg",
+        "medium": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/0bcc247a-61fa-4a95-bab1-21827a824749-thumbnail-770x770-70.jpg",
+        "small": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/0bcc247a-61fa-4a95-bab1-21827a824749-thumbnail-500x500-70.jpg",
+        "full_size": "https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/0bcc247a-61fa-4a95-bab1-21827a824749.jpg",
+        "thumbnail": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/0bcc247a-61fa-4a95-bab1-21827a824749-thumbnail-370x370-70.jpg"
+      },
+      "alt_text": null,
+      "display_order": 1
+    },
+    {
+      "id": "59b5fff2-2281-44a4-8bf1-56d9fd1165bb",
+      "image": {
+        "large": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/59b5fff2-2281-44a4-8bf1-56d9fd1165bb-thumbnail-1000x1000-70.jpg",
+        "medium": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/59b5fff2-2281-44a4-8bf1-56d9fd1165bb-thumbnail-770x770-70.jpg",
+        "small": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/59b5fff2-2281-44a4-8bf1-56d9fd1165bb-thumbnail-500x500-70.jpg",
+        "full_size": "https://media.zid.store/d297fb8b-c322-412e-a2f4-ffa96dc57022/59b5fff2-2281-44a4-8bf1-56d9fd1165bb.jpg",
+        "thumbnail": "https://media.zid.store/thumbs/d297fb8b-c322-412e-a2f4-ffa96dc57022/59b5fff2-2281-44a4-8bf1-56d9fd1165bb-thumbnail-370x370-70.jpg"
+      },
+      "alt_text": "Black Sneaker",
+      "display_order": 2
+    }
+  ],
+  "filters": {}
+}

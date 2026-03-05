@@ -49,8 +49,17 @@ class MockHTTPClient:
     def post(self, path: str, *, json: dict | None = None, data: dict | None = None, **kwargs) -> Any:
         return self._request("POST", path, json=json, data=data)
     
+    def put(self, path: str, *, json: dict | None = None, data: dict | None = None, **kwargs) -> Any:
+        return self._request("PUT", path, json=json, data=data)
+
+    def patch(self, path: str, *, json: dict | None = None, data: dict | None = None, **kwargs) -> Any:
+        return self._request("PATCH", path, json=json, data=data)
+
     def delete(self, path: str, **kwargs) -> Any:
         return self._request("DELETE", path)
+
+    def upload(self, path: str, *, files: dict | None = None, data: dict | None = None, **kwargs) -> Any:
+        return self._request("POST", path, data=data)
     
     def _request(self, method: str, path: str, json: dict | None = None, data: dict | None = None, **kwargs) -> Any:
         self.requests.append({"method": method, "path": path, "json": json, "data": data, **kwargs})
@@ -234,3 +243,131 @@ def error_500():
     return {
         "message": "Internal server error",
     }
+
+
+# =============================================================================
+# Product Fixtures
+# =============================================================================
+
+@pytest.fixture
+def products_list_response():
+    """Load products list fixture."""
+    return load_fixture("products_list")
+
+
+@pytest.fixture
+def product_detail_response():
+    """Load product detail fixture."""
+    return load_fixture("product_detail")
+
+
+@pytest.fixture
+def product_settings_response():
+    """Load product settings fixture."""
+    return load_fixture("product_settings")
+
+
+# =============================================================================
+# Voucher Fixtures
+# =============================================================================
+
+@pytest.fixture
+def product_vouchers_list_response():
+    """Load product vouchers list fixture."""
+    return load_fixture("product_vouchers_list")
+
+
+@pytest.fixture
+def order_vouchers_response():
+    """Load order vouchers fixture."""
+    return load_fixture("order_vouchers")
+
+
+# =============================================================================
+# Category Fixtures
+# =============================================================================
+
+@pytest.fixture
+def product_categories_list_response():
+    """Load product categories list fixture."""
+    return load_fixture("product_categories_list")
+
+
+@pytest.fixture
+def product_category_detail_response():
+    """Load product category detail fixture."""
+    return load_fixture("product_category_detail")
+
+
+# =============================================================================
+# Image Fixtures
+# =============================================================================
+
+@pytest.fixture
+def product_images_list_response():
+    """Load product images list fixture."""
+    return load_fixture("product_images_list")
+
+
+# =============================================================================
+# Stock Fixtures
+# =============================================================================
+
+@pytest.fixture
+def product_stocks_list_response():
+    """Load product stocks list fixture."""
+    return load_fixture("product_stocks_list")
+
+
+# =============================================================================
+# Variant Fixtures
+# =============================================================================
+
+@pytest.fixture
+def variant_create_response():
+    """Load variant creation response fixture."""
+    return load_fixture("variant_create_response")
+
+
+# =============================================================================
+# Notification Fixtures
+# =============================================================================
+
+@pytest.fixture
+def product_notifications_list_response():
+    """Load product notifications list fixture."""
+    return load_fixture("product_notifications_list")
+
+
+# =============================================================================
+# Attribute Fixtures
+# =============================================================================
+
+@pytest.fixture
+def attributes_list_response():
+    """Load attributes list fixture."""
+    return load_fixture("attributes_list")
+
+
+@pytest.fixture
+def attribute_detail_response():
+    """Load attribute detail fixture."""
+    return load_fixture("attribute_detail")
+
+
+@pytest.fixture
+def attribute_presets_list_response():
+    """Load attribute presets list fixture."""
+    return load_fixture("attribute_presets_list")
+
+
+@pytest.fixture
+def metafields_list_response():
+    """Load metafields list fixture."""
+    return load_fixture("metafields_list")
+
+
+@pytest.fixture
+def badges_list_response():
+    """Load badges list fixture."""
+    return load_fixture("badges_list")

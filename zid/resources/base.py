@@ -131,7 +131,7 @@ class BaseResource(ABC):
         self,
         path: str,
         *,
-        json: dict[str, Any] | None = None,
+        json: dict[str, Any] | list[Any] | None = None,
         data: dict[str, Any] | None = None,
         params: dict[str, Any] | None = None,
         method: str = "PUT",
@@ -140,7 +140,7 @@ class BaseResource(ABC):
 
         Args:
             path: API endpoint path.
-            json: JSON request body.
+            json: JSON request body (dict or list).
             data: Form-encoded request body.
             params: Query parameters.
             method: HTTP method ("PUT" or "PATCH").

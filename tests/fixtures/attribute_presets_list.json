@@ -1,0 +1,40 @@
+{
+  "count": 3,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "1f4956ea-e19c-4de9-8c75-7e12b5e4aee8",
+      "slug": "size-1",
+      "name": "Size",
+      "value": "Small",
+      "type": "default",
+      "type_value": null,
+      "display_order": 1,
+      "attribute_image_id": null,
+      "attribute_id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293"
+    },
+    {
+      "id": "4620a7e7-c4e3-4402-9c07-f08aab29a4dd",
+      "slug": "size-1",
+      "name": "Size",
+      "value": "Medium",
+      "type": "default",
+      "type_value": null,
+      "display_order": 2,
+      "attribute_image_id": null,
+      "attribute_id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293"
+    },
+    {
+      "id": "f56e7d74-290e-45a5-8057-f0c8b868aaee",
+      "slug": "size-1",
+      "name": "Size",
+      "value": "Large",
+      "type": "default",
+      "type_value": null,
+      "display_order": 3,
+      "attribute_image_id": null,
+      "attribute_id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293"
+    }
+  ]
+}

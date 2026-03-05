@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "extended_search_support": false,
+    "related_products_status": false,
+    "related_products_count": 8,
+    "sold_products_count_status": false,
+    "min_sold_products_count": 1,
+    "default_products_ordering": "-is_infinite,-quantity",
+    "has_products_filtration": false,
+    "is_wishlist_enabled": true
+  }
+}

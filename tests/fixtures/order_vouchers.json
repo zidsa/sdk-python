@@ -1,0 +1,20 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "0b470326-d2b1-4d96-8ee1-ea03a50dfd83",
+      "product_id": "a1477bb2-72ea-4be9-b2cf-093cefc721bb",
+      "status": "RESERVED",
+      "order": 64855100,
+      "serial_number": "Z.12345",
+      "key": "FX00001",
+      "pin_code": "12345",
+      "expires_at": "2026-10-10T03:00:00Z",
+      "updated_at": "2026-02-11T10:25:33.999016Z",
+      "created_at": "2026-02-11T10:25:33.998979Z",
+      "expires_at_formatted": null
+    }
+  ]
+}

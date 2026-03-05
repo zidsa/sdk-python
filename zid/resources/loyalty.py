@@ -160,7 +160,7 @@ class LoyaltyResource(BaseResource):
                 print(tx.date, tx.direction, tx.points)
             ```
         """
-        path = f"/v1/managers/loyalty-program/points-history/{customer_id}"
+        path = f"/v1/managers/loyalty-program/points-history/{customer_id}/"
         response = self._get(path)
         items = response.get("history", [])
         return [LoyaltyTransaction.model_validate(item) for item in items]

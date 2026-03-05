@@ -1,0 +1,60 @@
+{
+  "count": 103,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "06c7eaed-54e3-4fe3-8c3d-23f0d24d3b9e",
+      "name": "Color",
+      "slug": "color-7",
+      "presets": [],
+      "is_extra": false,
+      "is_enabled": true,
+      "display_order": null,
+      "preset_count": 0
+    },
+    {
+      "id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293",
+      "name": "Size",
+      "slug": "size-1",
+      "presets": [
+        {
+          "id": "1f4956ea-e19c-4de9-8c75-7e12b5e4aee8",
+          "slug": "size-1",
+          "name": "Size",
+          "value": "Small",
+          "type": "default",
+          "type_value": null,
+          "display_order": 1,
+          "attribute_image_id": null,
+          "attribute_id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293"
+        },
+        {
+          "id": "4620a7e7-c4e3-4402-9c07-f08aab29a4dd",
+          "slug": "size-1",
+          "name": "Size",
+          "value": "Medium",
+          "type": "default",
+          "type_value": null,
+          "display_order": 2,
+          "attribute_image_id": null,
+          "attribute_id": "cfb5bd3f-bbc5-4439-a171-b2d70e1c0293"
+        }
+      ],
+      "is_extra": false,
+      "is_enabled": true,
+      "display_order": 3,
+      "preset_count": 2
+    },
+    {
+      "id": "230192a3-9aef-4dde-aba3-836cc43f9ae6",
+      "name": "Weight",
+      "slug": "weight",
+      "presets": [],
+      "is_extra": true,
+      "is_enabled": false,
+      "display_order": 1,
+      "preset_count": 0
+    }
+  ]
+}

@@ -88,6 +88,15 @@ class Auth:
         if not self.authorization or not self.authorization.strip():
             raise AuthError("authorization token is required")
 
+        # Clean up common copy-paste issues.
+        self.authorization = self.authorization.strip()
+        if self.store_token:
+            self.store_token = self.store_token.strip()
+
+        # Strip "Bearer " prefix if user included it — the SDK adds it automatically.
+        if self.authorization.startswith("Bearer "):
+            self.authorization = self.authorization[7:]
+
     @property
     def can_refresh(self) -> bool:
         """Check if automatic token refresh is configured."""

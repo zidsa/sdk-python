@@ -18,6 +18,7 @@ from zid.resources.stores import StoresResource
 from zid.resources.bundle_offers import BundleOffersResource
 from zid.resources.coupons import CouponsResource
 from zid.resources.loyalty import LoyaltyResource
+from zid.resources.products import ProductsResource
 from zid.resources.webhooks import WebhooksResource
 
 __all__ = ["ZidClient", "RetryConfig"]
@@ -87,6 +88,9 @@ class ZidClient:
         language: str = "en",
         auto_refresh: bool = True,
         retry: RetryConfig | None = None,
+        log_requests: bool = False,
+        request_hook: Callable[..., None] | None = None,
+        response_hook: Callable[..., None] | None = None,
     ) -> None:
         """Initialize the Zid client.
 
@@ -107,6 +111,9 @@ class ZidClient:
             auto_refresh: Enable automatic token refresh on 401.
             retry: Retry configuration for transient failures and rate limits.
                 Defaults to RetryConfig() (3 retries with exponential backoff).
+            log_requests: Enable request/response debug logging.
+            request_hook: Callback invoked before each HTTP request.
+            response_hook: Callback invoked after each HTTP response.
 
         Raises:
             ValueError: If neither authorization nor auth is provided.
@@ -134,6 +141,9 @@ class ZidClient:
             timeout=timeout,
             auto_refresh=auto_refresh,
             retry=retry,
+            log_requests=log_requests,
+            request_hook=request_hook,
+            response_hook=response_hook,
         )
 
         self._resources: dict[str, Any] = {}
@@ -212,6 +222,14 @@ class ZidClient:
         if "webhooks" not in self._resources:
             self._resources["webhooks"] = WebhooksResource(self._http)
         return self._resources["webhooks"]
+
+    @property
+    def products(self) -> ProductsResource:
+        """Access the Products resource."""
+        if "products" not in self._resources:
+            self._resources["products"] = ProductsResource(self._http)
+        return self._resources["products"]
+
     @property
     def coupons(self) -> CouponsResource:
         """Access the Coupons resource."""
@@ -236,6 +254,13 @@ class ZidClient:
     def close(self) -> None:
         """Close the client and release resources."""
         self._http.close()
+
+    def __repr__(self) -> str:
+        return (
+            f"ZidClient(base_url={self._http._base_url!r}, "
+            f"store_id={self._auth.store_id!r})"
+        )
+
 
     def __enter__(self) -> ZidClient:
         return self

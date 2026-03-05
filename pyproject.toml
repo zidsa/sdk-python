@@ -42,10 +42,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/MuathZidding/sdk-python"
-Repository = "https://github.com/MuathZidding/sdk-python"
-Issues = "https://github.com/MuathZidding/sdk-python/issues"
-Changelog = "https://github.com/MuathZidding/sdk-python/releases"
+Homepage = "https://github.com/zidsa/sdk-python"
+Repository = "https://github.com/zidsa/sdk-python"
+Issues = "https://github.com/zidsa/sdk-python/issues"
+Changelog = "https://github.com/zidsa/sdk-python/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["zid"]

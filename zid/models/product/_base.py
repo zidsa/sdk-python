@@ -199,39 +199,39 @@ class ProductVariant(BaseModel):
 
     id: str
     product_class: str | None = None
-    sku: str
-    barcode: str
+    sku: str | None = None
+    barcode: str | None = None
     parent_id: str | None = None
     name: LocalizedField | None = None
-    slug: str
-    price: float
-    short_description: LocalizedField | None = None
+    slug: str | None = None
+    price: float | None = None
+    short_description: LocalizedField | str | None = None
     sale_price: float | None = None
-    formatted_price: str
+    formatted_price: str | None = None
     formatted_sale_price: str | None = None
-    currency: str
-    currency_symbol: str
+    currency: str | None = None
+    currency_symbol: str | None = None
     attributes: list[ProductAttribute] = Field(default_factory=list)
     categories: list[ProductCategory] = Field(default_factory=list)
     display_order: int | None = None
-    has_options: bool
-    has_fields: bool
+    has_options: bool | None = None
+    has_fields: bool | None = None
     images: list[Any] = Field(default_factory=list)
     videos: list[Any] = Field(default_factory=list)
-    is_draft: bool
-    quantity: int
-    is_infinite: bool
-    html_url: str
+    is_draft: bool | None = None
+    quantity: int | None = None
+    is_infinite: bool | None = None
+    html_url: str | None = None
     weight: ProductWeight | None = None
     keywords: list[str] = Field(default_factory=list)
-    requires_shipping: bool
-    is_taxable: bool
-    structure: str
+    requires_shipping: bool | None = None
+    is_taxable: bool | None = None
+    structure: str | None = None
     seo: str | None = None
     rating: ProductRating | None = None
-    store_id: int
+    store_id: int | None = None
     purchase_restrictions: PurchaseRestrictions | None = None
-    metafields: list[ProductMetafield] = Field(default_factory=list)
+    metafields: list[ProductMetafield] | None = Field(default=None)
     meta: list[str] | None = None
     related_products_settings: str | None = None
     related_products_title: LocalizedField | None = None
@@ -242,8 +242,8 @@ class ProductVariant(BaseModel):
     group_products: list[Any] | None = None
     stocks: list[ProductStock] = Field(default_factory=list)
     sold_products_count: int | None = None
-    created_at: str
-    updated_at: str
+    created_at: str | None = None
+    updated_at: str | None = None
 
 
 # --- Main Models ---
@@ -260,39 +260,39 @@ class Product(BaseModel):
 
     id: str
     product_class: str | None = None
-    sku: str
-    barcode: str
+    sku: str | None = None
+    barcode: str | None = None
     parent_id: str | None = None
     name: LocalizedField | None = None
-    slug: str
-    price: float
-    short_description: LocalizedField | None = None
+    slug: str | None = None
+    price: float | None = None
+    short_description: LocalizedField | str | None = None
     sale_price: float | None = None
     formatted_price: str | None = None
     formatted_sale_price: str | None = None
-    currency: str
-    currency_symbol: str
+    currency: str | None = None
+    currency_symbol: str | None = None
     attributes: list[ProductAttribute] = Field(default_factory=list)
     categories: list[ProductCategory] = Field(default_factory=list)
     display_order: int | None = None
-    has_options: bool
-    has_fields: bool
+    has_options: bool | None = None
+    has_fields: bool | None = None
     images: list[Any] = Field(default_factory=list)
     videos: list[Any] = Field(default_factory=list)
-    is_draft: bool
+    is_draft: bool | None = None
     quantity: int | None = None
-    is_infinite: bool
-    html_url: str
+    is_infinite: bool | None = None
+    html_url: str | None = None
     weight: ProductWeight | None = None
     keywords: list[str] = Field(default_factory=list)
-    requires_shipping: bool
-    is_taxable: bool
-    structure: str
+    requires_shipping: bool | None = None
+    is_taxable: bool | None = None
+    structure: str | None = None
     seo: ProductSeo | None = None
     rating: ProductRating | None = None
-    store_id: int
+    store_id: int | None = None
     purchase_restrictions: PurchaseRestrictions | None = None
-    metafields: list[ProductMetafield] = Field(default_factory=list)
+    metafields: list[ProductMetafield] | None = Field(default=None)
     meta: ProductMeta | None = None
     related_products_settings: str | None = None
     related_products_title: LocalizedField | None = None
@@ -312,8 +312,8 @@ class Product(BaseModel):
     stocks: list[ProductStock] = Field(default_factory=list)
     vouchers_count: int | None = None
     sold_products_count: int | None = None
-    created_at: str
-    updated_at: str
+    created_at: str | None = None
+    updated_at: str | None = None
 
 
 class ProductSettings(BaseModel):

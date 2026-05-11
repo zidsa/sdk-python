@@ -38,7 +38,7 @@ class TokenResponse:
         """Parse token response from OAuth server."""
         return cls(
             access_token=data["access_token"],
-            authorization=data["Authorization"],
+            authorization=data.get("authorization") or data["Authorization"],
             refresh_token=data["refresh_token"],
             expires_in=data.get("expires_in", 31536000),
         )

@@ -154,6 +154,7 @@ class HTTPClient:
         """Build request headers with current auth credentials."""
         headers: dict[str, str] = {
             "Authorization": f"Bearer {self._auth.authorization}",
+            "Accept": "application/json",
             "Accept-Language": self._language,
         }
 
@@ -183,6 +184,13 @@ class HTTPClient:
 
         status_code = response.status_code
         request_id = response.headers.get("X-Request-Id")
+
+        if response.is_redirect:
+            raise ZidAuthenticationError(
+                message="Authentication required (received redirect to login)",
+                request_id=request_id,
+                body={"message": "Redirect to login", "location": response.headers.get("Location")},
+            )
 
         try:
             body = response.json()
@@ -263,7 +271,11 @@ class HTTPClient:
     def _extract_error_message(self, body: dict[str, Any]) -> str:
         if "message" in body:
             msg = body["message"]
-            return msg if isinstance(msg, str) else str(msg)
+            if isinstance(msg, str):
+                return msg
+            if isinstance(msg, dict):
+                return msg.get("description") or msg.get("name") or str(msg)
+            return str(msg)
         if "error" in body:
             err = body["error"]
             return err if isinstance(err, str) else str(err)

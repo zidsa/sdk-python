@@ -604,7 +604,7 @@ class OrderSimple(BaseModel):
     has_different_consignee: int | None = None
     is_guest_customer: int | None = None
     is_gift_order: int | None = None
-    gift_card_details: list[GiftCardDetail | str] | None = None
+    gift_card_details: list[GiftCardDetail | str] | bool | None = None
     is_quick_checkout_order: bool | None = None
     order_total: str | float | None = None
     order_total_string: str | None = None
@@ -655,7 +655,7 @@ class Order(BaseModel):
     has_different_consignee: int | None = None
     is_guest_customer: int | None = None
     is_gift_order: int | None = None
-    gift_card_details: list[GiftCardDetail | str] | None = None
+    gift_card_details: list[GiftCardDetail | str] | bool | None = None
     consignee: OrderConsignee | None = None
     is_quick_checkout_order: bool | None = None
     order_total: str | float | None = None
@@ -741,7 +741,7 @@ class OrderPos(BaseModel):
     has_different_consignee: int | None = None
     is_guest_customer: int | None = None
     is_gift_order: int | None = None
-    gift_card_details: list[GiftCardDetail | str] | None = None
+    gift_card_details: list[GiftCardDetail | str] | bool | None = None
     is_quick_checkout_order: bool | None = None
     order_total: str | float | None = None
     order_total_string: str | None = None
@@ -822,7 +822,7 @@ class OrderPrint(BaseModel):
     has_different_consignee: int | None = None
     is_guest_customer: int | None = None
     is_gift_order: int | None = None
-    gift_card_details: list[GiftCardDetail | str] | None = None
+    gift_card_details: list[GiftCardDetail | str] | bool | None = None
     is_quick_checkout_order: bool | None = None
     order_total: str | float | int | None = None
     order_total_string: str | None = None
@@ -881,7 +881,7 @@ class OrderPrintSummary(BaseModel):
     has_different_consignee: int | None = None
     is_guest_customer: int | None = None
     is_gift_order: int | None = None
-    gift_card_details: list[GiftCardDetail | str] | None = None
+    gift_card_details: list[GiftCardDetail | str] | bool | None = None
     is_quick_checkout_order: bool | None = None
     order_total: str | float | None = None
     order_total_string: str | None = None
